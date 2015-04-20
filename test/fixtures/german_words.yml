@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyString
+  chapter: 1
+  english_word_id: 1
+
+two:
+  word: MyString
+  chapter: 1
+  english_word_id: 1

@@ -1,0 +1,2 @@
+module GermanWordsHelper
+end

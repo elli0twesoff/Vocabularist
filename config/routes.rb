@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :german_words
+
+  resources :english_words
+
   resources :homes
 
   # The priority is based upon order of creation: first created -> highest priority.
