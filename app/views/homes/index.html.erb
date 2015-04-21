@@ -1,13 +1,29 @@
 <h2>Vocabularist!</h2>
 
-<br />
-
 <p>
 	select the language you want to test in:
 </p>
 
-<%= link_to "english", root_path %><br />
-<%= link_to "deutsch", root_path %><br />
+<%= form_tag(controller: 'vocab_tests', action: 'start', method: 'get', class: 'start_test') do |f| %>
+
+	
+	<table>
+		<tr>
+			<td>
+				chapter 1 
+				<%= check_box_tag 'chapters[]', 1 %>
+			</td>
+			<td>
+				chapter 2
+				<%= check_box_tag 'chapters[]', 2 %>
+			</td>
+		</tr>
+
+		<tr><td><%= submit_tag 'english' %></td></tr>
+		<tr><td><%= submit_tag 'deutsch' %></td></tr>
+
+	</table>
+<% end %>
 
 <p>
 	edit words for:

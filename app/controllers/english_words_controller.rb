@@ -25,9 +25,23 @@ class EnglishWordsController < ApplicationController
   # POST /english_words
   # POST /english_words.json
   def create
-    @english_word = EnglishWord.create(word: params[:english_word], chapter: params[:chapter].first)
-		@german_word = GermanWord.create(word: params[:german_word], chapter: params[:chapter].first, english_word_id:@english_word.id)
+    @english_word = EnglishWord.create(word: params[:english_word],
+																			 chapter: params[:chapter].first)
 
+		case params[:german_word_article]
+		when 'der'
+			gender = 'male'
+		when 'die'
+			gender = 'female'
+		when 'das'
+			gender = 'neuter'
+		end
+
+		@german_word = GermanWord.create(word: params[:german_word],
+																		 article: params[:german_word_article],
+																		 gender: gender,
+																		 chapter: params[:chapter].first,
+																		 english_word_id:@english_word.id)
     respond_to do |format|
       if @english_word.save && @german_word.save
         format.html { redirect_to english_words_path, notice: "Word: #{@english_word.word} - #{@german_word.article} #{@german_word.word}, was successfully created." }
@@ -63,11 +77,20 @@ class EnglishWordsController < ApplicationController
     end
   end
 
+
+	def destroy_all
+		EnglishWord.destroy_all
+		GermanWord.destroy_all
+
+		redirect_to :back
+	end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_english_word
       @english_word = EnglishWord.find(params[:id])
     end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def english_word_params

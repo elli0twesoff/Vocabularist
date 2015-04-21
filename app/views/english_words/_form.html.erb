@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= label_tag :english_word, 'english' %>
+		<%= label_tag :english_word, 'english' %><br />
     <%= text_field_tag :english_word %>
   </div>
 
   <div class="field">
-    <%= label_tag :german_word, 'german' %>
-    <%= text_field_tag :german_word %>
-  </div>
+		<%= label_tag :german_word_article, 'german (article + word)' %><br />
+    <%= select_tag :german_word_article, options_for_select(['', 'der', 'die', 'das']) %> <%= text_field_tag :german_word %>
+	</div>
 
   <div class="field">
-    <%= label_tag :chapter, 'chapter' %>
-    <%= number_field :chapter, nil %>
+		<%= label_tag :chapter, 'chapter' %><br />
+    <%= number_field :chapter, nil, value: '1'%>
   </div>
 
   <div class="actions">

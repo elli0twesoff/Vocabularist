@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  get 'vocab_tests/start'
+
   resources :german_words
-
   resources :english_words
-
   resources :homes
+	
+	post 'english_words/destroy_all', to: 'english_words#destroy_all'
+	post 'vocab_tests/start', to: 'vocab_tests#start'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
