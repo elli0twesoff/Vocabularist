@@ -1,0 +1,35 @@
+<h1>Listing words</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>English</th>
+      <th>German</th>
+      <th>Chapter</th>
+      <th>Article</th>
+      <th>Gender</th>
+      <th>Plural key</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @words.each do |word| %>
+      <tr>
+        <td><%= word.english %></td>
+        <td><%= word.german %></td>
+        <td><%= word.chapter %></td>
+        <td><%= word.article %></td>
+        <td><%= word.gender %></td>
+        <td><%= word.plural_key %></td>
+        <td><%= link_to 'Show', word %></td>
+        <td><%= link_to 'Edit', edit_word_path(word) %></td>
+        <td><%= link_to 'Destroy', word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Word', new_word_path %>

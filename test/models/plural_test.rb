@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class GermanWordTest < ActiveSupport::TestCase
+class PluralTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

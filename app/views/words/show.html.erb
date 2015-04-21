@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>English:</strong>
+  <%= @word.english %>
+</p>
+
+<p>
+  <strong>German:</strong>
+  <%= @word.german %>
+</p>
+
+<p>
+  <strong>Chapter:</strong>
+  <%= @word.chapter %>
+</p>
+
+<p>
+  <strong>Article:</strong>
+  <%= @word.article %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @word.gender %>
+</p>
+
+<p>
+  <strong>Plural key:</strong>
+  <%= @word.plural_key %>
+</p>
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

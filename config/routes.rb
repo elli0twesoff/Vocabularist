@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  resources :words
+
   get 'vocab_tests/start'
 
-  resources :german_words
-  resources :english_words
-  resources :homes
+	resources :homes
 	
 	post 'english_words/destroy_all', to: 'english_words#destroy_all'
 	post 'vocab_tests/start', to: 'vocab_tests#start'

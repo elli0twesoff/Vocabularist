@@ -2,8 +2,10 @@
 
 one:
   word: MyString
-  chapter: 1
+  article: MyString
+  gender: MyString
 
 two:
   word: MyString
-  chapter: 1
+  article: MyString
+  gender: MyString
