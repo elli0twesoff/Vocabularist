@@ -25,11 +25,12 @@ class EnglishWordsController < ApplicationController
   # POST /english_words
   # POST /english_words.json
   def create
-    @english_word = EnglishWord.new(english_word_params)
+    @english_word = EnglishWord.create(word: params[:english_word], chapter: params[:chapter].first)
+		@german_word = GermanWord.create(word: params[:german_word], chapter: params[:chapter].first, english_word_id:@english_word.id)
 
     respond_to do |format|
-      if @english_word.save
-        format.html { redirect_to @english_word, notice: 'English word was successfully created.' }
+      if @english_word.save && @german_word.save
+        format.html { redirect_to english_words_path, notice: "Word: #{@english_word.word} - #{@german_word.article} #{@german_word.word}, was successfully created." }
         format.json { render :show, status: :created, location: @english_word }
       else
         format.html { render :new }

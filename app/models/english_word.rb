@@ -1,3 +1,3 @@
 class EnglishWord < ActiveRecord::Base
-	has_many :german_words
+	has_one :german_word, dependent: :destroy
 end
