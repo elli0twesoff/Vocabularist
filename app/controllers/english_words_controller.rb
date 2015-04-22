@@ -43,7 +43,7 @@ class EnglishWordsController < ApplicationController
 																			 english_word_id:@english_word.id)
 
 			respond_to do |format|
-				if @english_word.save
+				if @english_word.save && @german_word.save
 					format.html { redirect_to @english_word, notice: 'English word was successfully created.' }
 					format.json { render :show, status: :created, location: @english_word }
 				else

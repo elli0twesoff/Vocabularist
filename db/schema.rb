@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421174102) do
+ActiveRecord::Schema.define(version: 20150422031227) do
 
   create_table "english_words", force: true do |t|
     t.string   "word"
@@ -25,12 +25,6 @@ ActiveRecord::Schema.define(version: 20150421174102) do
     t.string   "article"
     t.string   "gender"
     t.integer  "english_word_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "homes", force: true do |t|
-    t.string   "index"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

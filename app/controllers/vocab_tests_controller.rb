@@ -4,6 +4,7 @@ class VocabTestsController < ApplicationController
 			chapters = params[:chapters]
 
 			if params[:commit] == 'english'
+				#binding.pry
 				# collect english words here...
 			elsif params[:commit] == 'deutsch'
 				# collect german words here...

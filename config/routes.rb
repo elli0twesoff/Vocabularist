@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   resources :german_words
 
   resources :english_words
 
   get 'vocab_tests/start'
 
-	resources :homes
-	
 	post 'english_words/destroy_all', to: 'english_words#destroy_all'
 	post 'vocab_tests/start', to: 'vocab_tests#start'
 
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'homes#index'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
