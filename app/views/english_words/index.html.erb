@@ -15,7 +15,11 @@
     <% @english_words.each do |english_word| %>
       <tr>
         <td><%= english_word.word %></td>
-				<td><%= "#{english_word.german_word.article} #{english_word.german_word.word}" %></td>
+				<td>
+					<% english_word.german_words.each do |german_word| %>
+						<%= german_word.article %> <%= german_word.word %>,
+					<% end %>
+				</td>
         <td><%= english_word.chapter %></td>
         <td><%= link_to 'destroy', english_word, method: :delete, data: { confirm: 'are you sure?' } %></td>
       </tr>
@@ -26,4 +30,3 @@
 <br>
 
 <%= link_to 'add word', new_english_word_path %><br />
-<%= link_to 'destroy all', english_words_destroy_all_path, method: :destroy %>

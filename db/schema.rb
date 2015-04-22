@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150422031227) do
+ActiveRecord::Schema.define(version: 20150422040401) do
 
   create_table "english_words", force: true do |t|
     t.string   "word"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150422031227) do
     t.string   "gender"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "german_word_id"
   end
 
 end

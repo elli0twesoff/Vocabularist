@@ -24,8 +24,7 @@ class EnglishWordsController < ApplicationController
 	# POST /english_words
 	# POST /english_words.json
 	def create
-		@english_word = EnglishWord.create(word: params[:english_word],
-																						chapter: params[:chapter].first)
+		@english_word = EnglishWord.create(word: params[:english_word], chapter: params[:chapter].first)
 
 		case params[:german_word_article]
 		when 'der'
@@ -36,21 +35,19 @@ class EnglishWordsController < ApplicationController
 			gender = 'neuter'
 		end
 	
-			@german_word = GermanWord.create(word: params[:german_word],
-																			 article: params[:german_word_article],
-																			 gender: gender,
-																			 chapter: params[:chapter].first,
-																			 english_word_id:@english_word.id)
+		german_word = @english_word.german_words.create(word: params[:german_word],
+																									  article: params[:german_word_article],
+																									  gender: gender)
 
-			respond_to do |format|
-				if @english_word.save && @german_word.save
-					format.html { redirect_to @english_word, notice: 'English word was successfully created.' }
-					format.json { render :show, status: :created, location: @english_word }
-				else
-					format.html { render :new }
-					format.json { render json: @english_word.errors, status: :unprocessable_entity }
-				end
+		respond_to do |format|
+			if @english_word.save
+				format.html { render :new, alert: "#{@english_word.word} - #{german_word.article} #{german_word.word} added." }
+				format.json { render :show, status: :created, location: @english_word }
+			else
+				format.html { redirect_to :back, alert: "there was a problem doing that..." }
+				format.json { render json: @english_word.errors, status: :unprocessable_entity }
 			end
+		end
 	end
 
 	# PATCH/PUT /english_words/1
@@ -87,4 +84,5 @@ class EnglishWordsController < ApplicationController
 	def english_word_params
 		params.require(:english_word).permit(:word, :chapter)
 	end
+
 end
