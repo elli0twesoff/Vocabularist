@@ -2,10 +2,14 @@ class VocabTestsController < ApplicationController
   def start
 		if params[:chapters]
 			chapters = params[:chapters]
+			@words = []
 
 			if params[:commit] == 'english'
-				binding.pry
 				# collect english words here...
+				
+				chapters.each { |ch| @words << EnglishWord.where(chapter: ch.to_i) }
+				@words.flatten!
+
 			elsif params[:commit] == 'deutsch'
 				# collect german words here...
 			else

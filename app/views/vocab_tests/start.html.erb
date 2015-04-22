@@ -1,3 +1,13 @@
 <%= link_to 'home', root_path %>
 
+<p>
+	vocabulary quiz on german words:
+</p>
+
+<% @words.each_with_index do |word, i| %>
+
+	question <%= i + 1 %> out of <%= @words.count %> 
+	<%= render 'question', word: word, count: i + 1 %><br />
+
+<% end %>
 

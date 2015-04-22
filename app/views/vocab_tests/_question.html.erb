@@ -1,0 +1,14 @@
+<% form_for(word) do |f| %>
+	
+	<div class='word-field'>
+		<%= count %>.  <%= word.word %>
+	</div>
+
+	<% if word.german_words.first.article %>
+		<div class=field'
+			<%= label_tag :article %>
+			<%= text_field_tag :article %>
+		</div>
+	<% end %>
+
+<% end %>
