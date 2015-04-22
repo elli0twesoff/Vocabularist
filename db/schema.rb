@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421172954) do
+ActiveRecord::Schema.define(version: 20150421174102) do
+
+  create_table "english_words", force: true do |t|
+    t.string   "word"
+    t.integer  "chapter"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "german_words", force: true do |t|
+    t.string   "word"
+    t.string   "article"
+    t.string   "gender"
+    t.integer  "english_word_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "homes", force: true do |t|
     t.string   "index"
@@ -23,17 +39,6 @@ ActiveRecord::Schema.define(version: 20150421172954) do
     t.string   "word"
     t.string   "article"
     t.string   "gender"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "words", force: true do |t|
-    t.string   "english"
-    t.string   "german"
-    t.integer  "chapter"
-    t.string   "article"
-    t.string   "gender"
-    t.string   "plural_key"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

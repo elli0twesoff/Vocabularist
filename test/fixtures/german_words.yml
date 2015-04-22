@@ -1,17 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  english: MyString
-  german: MyString
-  chapter: 1
+  word: MyString
   article: MyString
   gender: MyString
-  plural_key: MyString
+  english_word_id: 1
 
 two:
-  english: MyString
-  german: MyString
-  chapter: 1
+  word: MyString
   article: MyString
   gender: MyString
-  plural_key: MyString
+  english_word_id: 1

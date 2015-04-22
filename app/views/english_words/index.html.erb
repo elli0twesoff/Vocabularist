@@ -1,0 +1,27 @@
+<h1>Listing english_words</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Chapter</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @english_words.each do |english_word| %>
+      <tr>
+        <td><%= english_word.word %></td>
+        <td><%= english_word.chapter %></td>
+        <td><%= link_to 'Show', english_word %></td>
+        <td><%= link_to 'Edit', edit_english_word_path(english_word) %></td>
+        <td><%= link_to 'Destroy', english_word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New English word', new_english_word_path %>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :words
+  resources :german_words
+
+  resources :english_words
 
   get 'vocab_tests/start'
 
