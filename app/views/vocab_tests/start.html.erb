@@ -4,10 +4,25 @@
 	vocabulary quiz on german words:
 </p>
 
-<% @words.each_with_index do |word, i| %>
+<div class='quiz area'>
 
-	question <%= i + 1 %> out of <%= @words.count %> 
-	<%= render 'question', word: word, count: i + 1 %><br />
+	<% d_word = @words.first.german_words.first%>
 
-<% end %>
+	<div id="english">
+		<%= @words.first.word %> ==>
+	</div>
+
+	<div id="german_article">
+		<%= d_word.article if d_word.article %> &nbsp; 
+	</div>
+
+	<div id="german_word">
+		<%= d_word.word %>
+	</div>
+
+	<br />
+
+	<%= link_to "next", "javascript:nextQuestion(#{@words_json});" %>
+	
+</div>
 
