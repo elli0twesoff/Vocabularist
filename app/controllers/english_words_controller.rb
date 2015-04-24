@@ -24,24 +24,26 @@ class EnglishWordsController < ApplicationController
 	# POST /english_words
 	# POST /english_words.json
 	def create
-		@english_word = EnglishWord.create(word: params[:english_word], chapter: params[:chapter].first)
+		@english_word = EnglishWord.find_or_create_by(word: params[:english_word], chapter: params[:chapter].first)
 
-		case params[:german_word_article]
-		when 'der'
-			gender = 'male'
-		when 'die'
-			gender = 'female'
-		when 'das'
-			gender = 'neuter'
-		end
+		@english_word.create_translations(params)
+
+		#case params[:german_word_article]
+		#when 'der'
+			#gender = 'male'
+		#when 'die'
+			#gender = 'female'
+		#when 'das'
+			#gender = 'neuter'
+		#end
 	
-		german_word = @english_word.german_words.create(word: params[:german_word],
-																									  article: params[:german_word_article],
-																									  gender: gender)
+		#german_word = @english_word.german_words.create(word: params[:german_word],
+																										#article: params[:german_word_article],
+																										#gender: gender)
 
 		respond_to do |format|
 			if @english_word.save
-				format.html { render :new, alert: "#{@english_word.word} - #{german_word.article} #{german_word.word} added." }
+				format.html { render :new, alert: "#{@english_word.word} and translations created successfully." }
 				format.json { render :show, status: :created, location: @english_word }
 			else
 				format.html { redirect_to :back, alert: "there was a problem doing that..." }

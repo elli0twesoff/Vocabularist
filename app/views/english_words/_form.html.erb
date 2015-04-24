@@ -11,15 +11,43 @@
     </div>
   <% end %>
 
+	note*  the article selectors are only for the special cases.  leave them blank for the normal (implied) articles.  don't be a hermaphrodite.
   <div class="field">
 		<%= label_tag :english_word, 'english' %><br />
     <%= text_field_tag :english_word %>
   </div>
 
+	<!-- masculine singular -->
   <div class="field">
-		<%= label_tag :german_word_article, 'german (article + word)' %><br />
-    <%= select_tag :german_word_article, options_for_select(['', 'der', 'die', 'das']) %> <%= text_field_tag :german_word %>
+		<%= label_tag :masc_sing, 'masc sing.' %>
+<%= select_tag :masc_sing_art, options_for_select(['', 'der', 'die', 'das']) %>
+	<%= text_field_tag :masc_sing %>
 	</div>
+	
+	<!-- masculine plural -->
+	<div class="field">
+		<%= label_tag :masc_plur, 'masc plur.' %>
+<%= select_tag :masc_plur_art, options_for_select(['', 'der', 'die', 'das']) %>
+	<%= text_field_tag :masc_plur %>
+	</div>
+
+	<!-- feminine singular -->
+	<div class="field">
+		<%= label_tag :fem_sing, 'fem sing.' %>
+<%= select_tag :fem_sing_art, options_for_select(['', 'der', 'die', 'das']) %>
+	<%= text_field_tag :fem_sing %>
+	</div>
+
+	<!-- feminine plural -->
+	<div class="field">
+		<%= label_tag :fem_plur, 'fem sing.' %>
+<%= select_tag :fem_plur_art, options_for_select(['', 'der', 'die', 'das']) %>
+	<%= text_field_tag :fem_plur %>
+	</div>
+
+
+
+
 
   <div class="field">
 		<%= label_tag :chapter, 'chapter' %><br />
@@ -29,4 +57,16 @@
   <div class="actions">
     <%= submit_tag 'create' %>
   </div>
+
+
+	this is the graveyard.  l8r faygits<br />
+		<%= select_tag :german_word_article, options_for_select(['', 'der', 'die', 'das']) %> <%= text_field_tag :german_word %><br /><br />
+		<%= label_tag :gender_num, 'gender, sing/plur' %>
+		<%= select_tag :gender_num, options_for_select(['',
+																								 'masc sing.',
+																								 'masc plur.',
+																								 'fem sing.',
+																								 'fem plur.',
+																								 'neuter sing.',
+																								 'mixed plur.']) %>
 <% end %>
