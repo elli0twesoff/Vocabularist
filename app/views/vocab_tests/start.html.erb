@@ -12,35 +12,36 @@
 			<th>german:</th>
 		</thead>
 		<tbody>
-			<tr>
-				<td>
-					<div id="english">
-					</div>
-				</td>
-				<td class="germ-td">
 
-					<%= form_tag(controller: "vocab_tests", action: "complete_test") do %>
-							<%= text_field_tag :german_article, "", size: 3 %> <%= text_field_tag(:german_word) %>
-					<% end %>
+		<tr>
+			<td></td>
+			<td><div id="gender"></div></td>
+		</tr>
 
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div id="next_ques">
-						<%= link_to "next", "#" %>
-					</div>
-				</td>
-			</tr>
+		<tr>
+			<td>
+				<div id="english">
+				</div>
+			</td>
 
-	</tbody>
-</table>
+			<td class="germ-td">
+				<input id="german_article" name="german_article" size="3" type="text">
+				<input id="german_word" name="german_word" type="text">
+			</td>
+
+			<td>
+				<div id="next_question">
+					<%= link_to "next!", "#" %>
+				</div>
+			</td>
+		</tr>
+
+		</tbody>
+	</table>
 
 	<br />
 
-	
+
 </div>
 
-
-<div id="quiz_words" data-json="<%= @words_json %>" data-correct-count=""></div>
-<div id="answers" data-answers=""></div>
+<div id="quiz_words" data-json="<%= @words_json %>"></div>
