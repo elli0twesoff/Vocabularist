@@ -1,0 +1,12 @@
+td {
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+	width: 100px;
+}
+
+.germ-td {
+	width: 200px;
+}

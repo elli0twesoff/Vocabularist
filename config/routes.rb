@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   #get 'vocab_tests/start'
 	post 'vocab_tests/start', to: 'vocab_tests#start'
+	post 'vocab_tests/complete_test', to: 'vocab_tests#complete_test'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

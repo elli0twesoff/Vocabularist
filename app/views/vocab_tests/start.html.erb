@@ -1,27 +1,46 @@
 <%= link_to 'home', root_path %>
 
 <p>
-	vocabulary quiz on german words:
+	<strong><u>quiz on german words:</u></strong>
 </p>
 
 <div class='quiz area'>
 
-	<div id="english">
-	</div>
+	<table>
+		<thead>
+			<th>english:</th>
+			<th>german:</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<div id="english">
+					</div>
+				</td>
+				<td class="germ-td">
 
-	<div id="german_article">
-	</div>
+					<%= form_tag(controller: "vocab_tests", action: "complete_test") do %>
+							<%= text_field_tag :german_article, "", size: 3 %> <%= text_field_tag(:german_word) %>
+					<% end %>
 
-	<div id="german_word">
-	</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="next_ques">
+						<%= link_to "next", "#" %>
+					</div>
+				</td>
+			</tr>
+
+	</tbody>
+</table>
 
 	<br />
 
-	<div id="next_ques">
-		<%= link_to "next", "#" %>
-	</div>
 	
 </div>
 
 
-<div id="quiz_words" data-json="<%= @words_json %>"></div>
+<div id="quiz_words" data-json="<%= @words_json %>" data-correct-count=""></div>
+<div id="answers" data-answers=""></div>
