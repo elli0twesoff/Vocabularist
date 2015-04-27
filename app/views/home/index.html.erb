@@ -7,7 +7,7 @@
 <%= form_tag(controller: 'vocab_tests', action: 'start') do |f| %>
 
 	
-	<table>
+	<table class='index'>
 		<tr>
 			<td>
 				chapter 1 
@@ -19,8 +19,24 @@
 			</td>
 		</tr>
 
-		<tr><td><%= submit_tag 'english' %></td></tr>
-		<tr><td><%= submit_tag 'deutsch' %></td></tr>
+		<tr>
+			<td colspan='2'>
+				<%= label_tag :question_limit, 'question limit?' %> 
+				<%= text_field_tag :question_limit, "", size: 2 %>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan='2'>
+				<%= label_tag :nouns_only, 'nouns only?' %> 
+				<%= check_box_tag :nouns_only %>
+			</td>
+		</tr>
+
+		<tr>
+			<td><%= submit_tag 'english' %></td>
+			<td><%= submit_tag 'deutsch' %></td>
+		</tr>
 
 	</table>
 <% end %>

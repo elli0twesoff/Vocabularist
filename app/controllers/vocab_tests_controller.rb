@@ -1,14 +1,9 @@
 class VocabTestsController < ApplicationController
   def start
 		if params[:chapters]
-			chapters = params[:chapters]
-			@words = []
-
 			if params[:commit] == 'english'
-				# collect english words here...
-				
-				chapters.each { |ch| @words << EnglishWord.where(chapter: ch.to_i) }
-				@words.flatten!.shuffle!
+
+				@words = EnglishWord.get_test_words(params)
 				@words_json = EnglishWord.get_json_words(@words)
 
 			elsif params[:commit] == 'deutsch'

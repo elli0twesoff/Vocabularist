@@ -69,6 +69,28 @@ class EnglishWord < ActiveRecord::Base
 		word_hash
 	end
 
+	def self.get_test_words(params)
+		# collect english words here...
+		
+		chapters = params[:chapters]
+
+		chapters.each do |ch|
+
+			if params[:nouns_only]
+				@words << EnglishWord.joins(:german_words).where("german_words.gender != ''", "chapter = #{ch.to_i}")
+			else
+				@words << EnglishWord.where(chapter: ch.to_i) 
+			end
+
+		end
+
+		@words = @words.flatten!.shuffle!
+
+		unless params[:question_limit].blank? && @words.length > params[:question_limit].to_i
+			@words = @words.drop(@words.length - params[:question_limit].to_i)
+		end
+	end
+
 	private
 
 	def self.nuke!
