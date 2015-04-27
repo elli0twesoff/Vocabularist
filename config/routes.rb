@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :german_words
   resources :english_words
 
-  get 'vocab_tests/start'
+  #get 'vocab_tests/start'
 	post 'vocab_tests/start', to: 'vocab_tests#start'
 
   # The priority is based upon order of creation: first created -> highest priority.

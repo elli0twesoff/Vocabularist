@@ -6,23 +6,22 @@
 
 <div class='quiz area'>
 
-	<% d_word = @words.first.german_words.first%>
-
 	<div id="english">
-		<%= @words.first.word %> ==>
 	</div>
 
 	<div id="german_article">
-		<%= d_word.article if d_word.article %> &nbsp; 
 	</div>
 
 	<div id="german_word">
-		<%= d_word.word %>
 	</div>
 
 	<br />
 
-	<%= link_to "next", "javascript:nextQuestion(#{@words_json});" %>
+	<div id="next_ques">
+		<%= link_to "next", "#" %>
+	</div>
 	
 </div>
 
+
+<div id="quiz_words" data-json="<%= @words_json %>"></div>

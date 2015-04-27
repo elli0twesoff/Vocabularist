@@ -3,6 +3,8 @@ class EnglishWord < ActiveRecord::Base
 	has_many :plurals, dependent: :destroy
 
 	def create_translations(params)
+		#  this gets called from the controller btw...
+		#
 		#  this is probably real disgusting but i'm super fuckin burnt out n tird rn so
 		#  don't fucking judge me bitch.  fuck off.
 		
