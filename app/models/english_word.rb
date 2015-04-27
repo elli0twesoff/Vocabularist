@@ -12,36 +12,38 @@ class EnglishWord < ActiveRecord::Base
 
 			if !params[:masc_sing].blank?
 
-				params[:masc_sing_art].blank? ? ms_art = 'der' : ms_art = params[:mas_sing_art]
-				@masc_sing = german_words.create(word: params[:masc_sing], article: ms_art, gender: 'ms')
+				params[:masc_sing_art].blank? ? ms_art = 'der' : ms_art = params[:masc_sing_art]
+				@masc_sing = german_words.create(word: params[:masc_sing], article: ms_art, gender: 'masculine singular')
 
 				if !params[:masc_plur].blank?
 
 					params[:masc_plur_art].blank? ? mp_art = 'die' : mp_art = params[:masc_plur_art]
-					@masc_sing.plurals.create(word: params[:masc_plur], article: mp_art, gender: 'mp')
+					@masc_sing.plurals.create(word: params[:masc_plur], article: mp_art, gender: 'masc/fem plural')
 
 				end
 
 			end
+
 			if !params[:fem_sing].blank?
 
 				params[:fem_sing_art].blank? ? fs_art = 'die' : ms_art = params[:fem_sing_art]
-				@fem_sing = german_words.create(word: params[:fem_sing], article: fs_art, gender: 'fs')
+				@fem_sing = german_words.create(word: params[:fem_sing], article: fs_art, gender: 'feminine singular')
 
 				if !params[:fem_plur].blank?
 					params[:fem_plur_art].blank? ? fp_art = 'die' : fp_art = params[:fem_plur_art]
-					@fem_sing.plurals.create(word: params[:fem_plur], article: fp_art, gender: 'fp')
+					@fem_sing.plurals.create(word: params[:fem_plur], article: fp_art, gender: 'feminine plural')
 				end
 
 			end
+
 			if !params[:neuter_sing].blank?
 
 				params[:neuter_sing_art].blank? ? neu_art = 'das' : neu_art = params[:neuter_sing_art]
-				@neu_sing = german_words.create(word: params[:neuter_sing], article: neu_art, gender: 'ns')
+				@neu_sing = german_words.create(word: params[:neuter_sing], article: neu_art, gender: 'neuter singular')
 
 				if !params[:neuter_plur].blank?
 					params[:neuter_plur_art].blank? ? neu_plur = 'die' : neu_art = params[:neuter_plur_art]
-					@neu_sing.plurals.create(word: params[:neuter_plur], article: neu_art, gender: 'np')
+					@neu_sing.plurals.create(word: params[:neuter_plur], article: neu_art, gender: 'neuter plural')
 				end
 			end
 		end
@@ -73,22 +75,26 @@ class EnglishWord < ActiveRecord::Base
 		# collect english words here...
 		
 		chapters = params[:chapters]
+		words = []
 
 		chapters.each do |ch|
 
 			if params[:nouns_only]
-				@words << EnglishWord.joins(:german_words).where("german_words.gender != ''", "chapter = #{ch.to_i}")
+				# this is pulling duplicates.  fix later...
+				words << EnglishWord.joins(:german_words).where("german_words.gender != ''", "chapter = #{ch.to_i}")
 			else
-				@words << EnglishWord.where(chapter: ch.to_i) 
+				words << EnglishWord.where(chapter: ch.to_i) 
 			end
 
 		end
 
-		@words = @words.flatten!.shuffle!
+		words = words.flatten!.shuffle!
 
-		unless params[:question_limit].blank? && @words.length > params[:question_limit].to_i
-			@words = @words.drop(@words.length - params[:question_limit].to_i)
+		unless params[:question_limit].blank? && words.length > params[:question_limit].to_i
+			words = words.drop(words.length - params[:question_limit].to_i)
 		end
+
+		return words
 	end
 
 	private
