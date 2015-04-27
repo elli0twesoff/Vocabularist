@@ -8,7 +8,7 @@ class VocabTestsController < ApplicationController
 				# collect english words here...
 				
 				chapters.each { |ch| @words << EnglishWord.where(chapter: ch.to_i) }
-				@words.flatten!
+				@words.flatten!.shuffle!
 				@words_json = EnglishWord.get_json_words(@words)
 
 			elsif params[:commit] == 'deutsch'

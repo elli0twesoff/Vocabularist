@@ -90,7 +90,7 @@ $(document).ready(function() {
 			}
 
 		} else {
-			alert('you need to submit an answer!');
+			alert("you should at least try to guess!  don't give up so easy sheesh...");
 		}
 
 	});

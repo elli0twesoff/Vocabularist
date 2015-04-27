@@ -10,3 +10,8 @@ th {
 .germ-td {
 	width: 180px;
 }
+
+
+.add-word td, th {
+	width: 270px;
+}
