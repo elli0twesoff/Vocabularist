@@ -85,7 +85,7 @@ $(document).ready(function() {
 				$('#german_article').val('');
 				$('#german_word').val('');
 			} else {
-				alert("that's all!  you got " + score + " out of " + wordCount + " correct!");
+				alert("you're done!  you got " + score + " out of " + wordCount + " correct.");
 				window.location = '/';
 			}
 
@@ -96,5 +96,4 @@ $(document).ready(function() {
 	});
 
 	generateNextWord();
-
 });

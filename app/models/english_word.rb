@@ -79,13 +79,14 @@ class EnglishWord < ActiveRecord::Base
 
 		chapters.each do |ch|
 			if params[:nouns_only]
-				words << EnglishWord.joins(:german_words).where("german_words.gender != ''", "chapter = #{ch.to_i}")
+				GermanWord.all.nouns.each { |wort| words << wort.english_word }
+				#words << EnglishWord.joins(:german_words).where("german_words.gender != ''", "chapter = #{ch.to_i}")
 			else
 				words << EnglishWord.where(chapter: ch.to_i) 
 			end
 		end
 
-		words.flatten!.uniq!.shuffle!
+		words = words.flatten.uniq.shuffle!
 
 		unless params[:question_limit].blank? && words.length > params[:question_limit].to_i
 			words = words.drop(words.length - params[:question_limit].to_i)
