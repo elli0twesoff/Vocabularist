@@ -78,17 +78,14 @@ class EnglishWord < ActiveRecord::Base
 		words = []
 
 		chapters.each do |ch|
-
 			if params[:nouns_only]
-				# this is pulling duplicates.  fix later...
 				words << EnglishWord.joins(:german_words).where("german_words.gender != ''", "chapter = #{ch.to_i}")
 			else
 				words << EnglishWord.where(chapter: ch.to_i) 
 			end
-
 		end
 
-		words = words.flatten!.shuffle!
+		words.flatten!.uniq!.shuffle!
 
 		unless params[:question_limit].blank? && words.length > params[:question_limit].to_i
 			words = words.drop(words.length - params[:question_limit].to_i)
