@@ -25,8 +25,13 @@
 			</td>
 
 			<td class="germ-td">
-				<input id="german_article" name="german_article" size="3" type="text" autocomplete="off">
-				<input id="german_word" name="german_word" type="text" autocomplete="off">
+				<form action="javascript:$('#next_question').click();" method="post" id="article_form">
+					<input id="german_article" name="german_article" size="3" type="text" autocomplete="off">
+				</form>
+					
+				<form action="javascript:$('#next_question').click();" method="post">
+					<input id="german_word" name="german_word" type="text" autocomplete="off">
+				</form>
 			</td>
 
 			<td>

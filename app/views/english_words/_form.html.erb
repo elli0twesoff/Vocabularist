@@ -35,45 +35,33 @@
 							<%= text_field_tag :non_noun %>
 						</div>
 						
-						<!-- masculine singular -->
+						<!-- singular -->
 						<div class="field">
-							<%= label_tag :masc_sing, 'masc sing.' %>
-					<%= select_tag :masc_sing_art, options_for_select(['', 'der', 'die', 'das']) %>
-						<%= text_field_tag :masc_sing %>
+							<%= label_tag :singular, 'sing.' %>
+							<%= select_tag :singular_art, options_for_select(['', 'der', 'die', 'das']) %>
+							<%= text_field_tag :singular %>
 						</div>
 						
-						<!-- masculine plural -->
-						<div class="field">
-							<%= label_tag :masc_plur, 'masc plur.' %>
-					<%= select_tag :masc_plur_art, options_for_select(['', 'der', 'die', 'das']) %>
-						<%= text_field_tag :masc_plur %>
+						<!-- plural -->
+						<div class="field" style="padding-bottom: 10px;">
+							<%= label_tag :plural, 'plur.' %>
+							<%= select_tag :plural_art, options_for_select(['', 'der', 'die', 'das']) %>
+							<%= text_field_tag :plural %>
 						</div>
 
+						only for professions/people!
 						<!-- feminine singular -->
-						<div class="field">
+						<div class="field" style="padding-top: 8px;">
 							<%= label_tag :fem_sing, 'fem sing.' %>
-					<%= select_tag :fem_sing_art, options_for_select(['', 'der', 'die', 'das']) %>
-						<%= text_field_tag :fem_sing %>
+							<%= select_tag :fem_sing_art, options_for_select(['', 'der', 'die', 'das']) %>
+							<%= text_field_tag :fem_sing %>
 						</div>
 
 						<!-- feminine plural -->
 						<div class="field">
 							<%= label_tag :fem_plur, 'fem plur.' %>
-					<%= select_tag :fem_plur_art, options_for_select(['', 'der', 'die', 'das']) %>
-						<%= text_field_tag :fem_plur %>
-						</div>
-
-						<div class="field">
-							<%= label_tag :neuter_sing, 'neuter sing.' %>
-					<%= select_tag :neuter_sing_art, options_for_select(['', 'der', 'die', 'das']) %>
-						<%= text_field_tag :neuter_sing %>
-						</div>
-						
-						<!-- masculine plural -->
-						<div class="field">
-							<%= label_tag :neuter_plur, 'neuter plur.' %>
-					<%= select_tag :neuter_plur_art, options_for_select(['', 'der', 'die', 'das']) %>
-						<%= text_field_tag :neuter_plur %>
+							<%= select_tag :fem_plur_art, options_for_select(['', 'der', 'die', 'das']) %>
+							<%= text_field_tag :fem_plur %>
 						</div>
 
 					</td>

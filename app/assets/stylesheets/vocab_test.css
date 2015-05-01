@@ -15,3 +15,8 @@ th {
 .add-word td, th {
 	width: 320px;
 }
+
+#article_form {
+	float: left;
+	padding-right: 5px;
+}

@@ -9,23 +9,17 @@ class EnglishWord < ActiveRecord::Base
 		if !params[:non_noun].blank?
 			@non_noun = german_words.create(word: params[:non_noun], article: '', gender: '')
 		else
-
-			if !params[:masc_sing].blank?
-
-				params[:masc_sing_art].blank? ? ms_art = 'der' : ms_art = params[:masc_sing_art]
-				@masc_sing = german_words.create(word: params[:masc_sing], article: ms_art, gender: 'masculine singular')
+			if !params[:singular].blank?
+				params[:singular_art].blank? ? ms_art = 'der' : ms_art = params[:singular_art]
+				@singular = german_words.create(word: params[:singular], article: ms_art, gender: 'singular')
 
 				if !params[:masc_plur].blank?
-
 					params[:masc_plur_art].blank? ? mp_art = 'die' : mp_art = params[:masc_plur_art]
-					@masc_sing.plurals.create(word: params[:masc_plur], article: mp_art, gender: 'masc/fem plural')
-
+					@singular.plurals.create(word: params[:masc_plur], article: mp_art, gender: 'plural')
 				end
-
 			end
 
 			if !params[:fem_sing].blank?
-
 				params[:fem_sing_art].blank? ? fs_art = 'die' : ms_art = params[:fem_sing_art]
 				@fem_sing = german_words.create(word: params[:fem_sing], article: fs_art, gender: 'feminine singular')
 
@@ -33,22 +27,10 @@ class EnglishWord < ActiveRecord::Base
 					params[:fem_plur_art].blank? ? fp_art = 'die' : fp_art = params[:fem_plur_art]
 					@fem_sing.plurals.create(word: params[:fem_plur], article: fp_art, gender: 'feminine plural')
 				end
-
-			end
-
-			if !params[:neuter_sing].blank?
-
-				params[:neuter_sing_art].blank? ? neu_art = 'das' : neu_art = params[:neuter_sing_art]
-				@neu_sing = german_words.create(word: params[:neuter_sing], article: neu_art, gender: 'neuter singular')
-
-				if !params[:neuter_plur].blank?
-					params[:neuter_plur_art].blank? ? neu_plur = 'die' : neu_art = params[:neuter_plur_art]
-					@neu_sing.plurals.create(word: params[:neuter_plur], article: neu_art, gender: 'neuter plural')
-				end
 			end
 		end
 
-		{ masc: @masc_sing, fem: @fem_sing, neu: @neu_sing }
+		{ masc: @singular, fem: @fem_sing, neu: @neu_sing }
 	end
 
 	def self.get_json_words(words)

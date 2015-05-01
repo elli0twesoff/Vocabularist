@@ -84,6 +84,7 @@ $(document).ready(function() {
 				generateNextWord();
 				$('#german_article').val('');
 				$('#german_word').val('');
+				$('#german_word')[0].focus();
 			} else {
 				alert("you're done!  you got " + score + " out of " + wordCount + " correct.");
 				window.location = '/';
