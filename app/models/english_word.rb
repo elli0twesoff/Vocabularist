@@ -13,14 +13,14 @@ class EnglishWord < ActiveRecord::Base
 				params[:singular_art].blank? ? ms_art = 'der' : ms_art = params[:singular_art]
 				@singular = german_words.create(word: params[:singular], article: ms_art, gender: 'singular')
 
-				if !params[:masc_plur].blank?
-					params[:masc_plur_art].blank? ? mp_art = 'die' : mp_art = params[:masc_plur_art]
-					@singular.plurals.create(word: params[:masc_plur], article: mp_art, gender: 'plural')
+				if !params[:plural].blank?
+					params[:plural_art].blank? ? plural_art = 'die' : plural_art = params[:plural_art]
+					@singular.plurals.create(word: params[:plural], article: plural_art, gender: 'plural')
 				end
 			end
 
 			if !params[:fem_sing].blank?
-				params[:fem_sing_art].blank? ? fs_art = 'die' : ms_art = params[:fem_sing_art]
+				params[:fem_sing_art].blank? ? fs_art = 'die' : fs_art = params[:fem_sing_art]
 				@fem_sing = german_words.create(word: params[:fem_sing], article: fs_art, gender: 'feminine singular')
 
 				if !params[:fem_plur].blank?

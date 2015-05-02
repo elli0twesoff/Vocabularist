@@ -1,30 +1,25 @@
 var answer = {};
 var score = 0;
-var remainingWords;
+var remainingWords, o;
 
 
 function getRandomArbitrary(min, max) {
 	return Math.round(Math.random() * (max - min) + min);
 }
 
-function findPlural(pluralsArray, gender) {
-
-	for (var i in pluralsArray['plurals']) {
-		var pluralObj = germanObj['plurals'][i];
-		if (pluralObj['gender'] == gender) {
-			return pluralObj;
-		}
-	}
-
-}
-
 function checkAnswer(userArt, userWord) {
 
 	if (userArt == answer['article'] && userWord == answer['word']) {
 		score++;
-		alert('yes!');
+		// TODO:
+		// constant alerts are annoying. let's maybe put a green check
+		// next to the next button or something so the user knows they
+		// answered correctly?
 	} else {
-		alert('nope :/  the answer is ' + answer['article'] + ' ' + answer['word']);
+		// TODO:
+		// let's make this an html notice as well.  any kind of popup notices
+		// are annoying.  they're just ghetto n shit.
+		alert('sorry, the answer is ' + answer['article'] + ' ' + answer['word'] + '.');
 	}
 
 }
@@ -39,7 +34,7 @@ function generateNextWord() {
 	var germanWord = germanObj['word'];
 	var germanArt = germanObj['article'];
 	var gender = germanObj['gender'];
-	var plural = findPlural(nextWord['plurals'], gender);
+	var plural = nextWord['plurals'][getRandomArbitrary(0, nextWord['plurals'].length - 1)];
 	var wordSelector = 0;
 
 	if (plural != null) {
@@ -84,9 +79,15 @@ $(document).ready(function() {
 				generateNextWord();
 				$('#german_article').val('');
 				$('#german_word').val('');
-				$('#german_word')[0].focus();
+
+				if (answer['article'] != null) {
+					$('#german_article')[0].focus();
+				} else {
+					$('#german_word')[0].focus();
+				}
 			} else {
-				alert("you're done!  you got " + score + " out of " + wordCount + " correct.");
+				var percentage = Math.round((score / wordCount) * 100) + "%";
+				alert("you're done!  you got " + score + " out of " + wordCount + " (" + percentage +"), correct.");
 				window.location = '/';
 			}
 

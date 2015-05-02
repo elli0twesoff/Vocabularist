@@ -20,6 +20,11 @@ class EnglishWordsController < ApplicationController
 
 	# GET /english_words/1/edit
 	def edit
+		@english_word = EnglishWord.find(params[:id])
+
+		# wipe out the old german words and plurals cause yo dumbass
+		# messed them up before.
+		@english_word.german_words.destroy_all
 	end
 
 	# POST /english_words

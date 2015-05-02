@@ -11,7 +11,6 @@
     </div>
   <% end %>
 
-		note*  the article selectors are only for the special cases.  leave them blank for the normal (implied) articles.  don't be a hermaphrodite.
 		<table class="add-word">
 			<thead>
 				<th>english:</th>
@@ -23,7 +22,7 @@
 				<tr>
 					<td>
 						<div class="field">
-							<%= text_field_tag :english_word %>
+							<%= text_field_tag :english_word, @english_word.word if @english_word %>
 						</div>
 					</td>
 
