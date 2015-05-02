@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'pry'
 gem 'pg'
 gem 'puma'
+gem 'rails_12factor', group: :production
