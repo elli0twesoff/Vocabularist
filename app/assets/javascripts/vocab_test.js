@@ -81,7 +81,7 @@ $(document).ready(function() {
 				$('#german_article').val('');
 				$('#german_word').val('');
 
-				if (answer['article'] != null) {
+				if (answer['article'] != '') {
 					$('#german_article')[0].focus();
 				} else {
 					$('#german_word')[0].focus();
