@@ -1,6 +1,6 @@
 var answer = {};
 var score = 0;
-var remainingWords, o;
+var remainingWords;
 
 
 function getRandomArbitrary(min, max) {
@@ -51,6 +51,7 @@ function generateNextWord() {
 		// give the user a plural word.
 		answer['article'] = pluralArt;
 		answer['word'] = pluralWord;
+    gender = plural['gender'];
 	}
 
 	// update the fields for the new word.
