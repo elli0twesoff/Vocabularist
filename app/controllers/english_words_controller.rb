@@ -2,33 +2,39 @@ class EnglishWordsController < ApplicationController
 	before_action :set_english_word, only: [:show, :edit, :update, :destroy]
 	http_basic_authenticate_with name: ENV['VOCABULARIST_USER'], password: ENV['VOCABULARIST_PASS']
 
-	# GET /english_words
-	# GET /english_words.json
 	def index
 		@english_words = EnglishWord.all
 	end
 
-	# GET /english_words/1
-	# GET /english_words/1.json
 	def show
 	end
 
-	# GET /english_words/new
 	def new
 		@english_word = EnglishWord.new
 	end
 
-	# GET /english_words/1/edit
 	def edit
 		@english_word = EnglishWord.find(params[:id])
+
+		# take the old translations and store them so we don't
+		# have to retype them into the form.
+		@english_word.german_words.each do |wort|
+			if wort.gender == 'singular'
+				@singular = wort.word
+			else
+				@fem_sing = wort.word
+			end
+
+			wort.plurals.each do |plural|
+				plural.gender == 'plural' ? @plural = plural.word : @fem_plur = plural.word
+			end
+		end
 
 		# wipe out the old german words and plurals cause yo dumbass
 		# messed them up before.
 		@english_word.german_words.destroy_all
 	end
 
-	# POST /english_words
-	# POST /english_words.json
 	def create
 		@english_word = EnglishWord.find_or_create_by(word: params[:english_word], chapter: params[:chapter].first)
 
@@ -45,8 +51,6 @@ class EnglishWordsController < ApplicationController
 		end
 	end
 
-	# PATCH/PUT /english_words/1
-	# PATCH/PUT /english_words/1.json
 	def update
 		respond_to do |format|
 			if @english_word.update(english_word_params)
@@ -59,8 +63,6 @@ class EnglishWordsController < ApplicationController
 		end
 	end
 
-	# DELETE /english_words/1
-	# DELETE /english_words/1.json
 	def destroy
 		@english_word.destroy
 		respond_to do |format|

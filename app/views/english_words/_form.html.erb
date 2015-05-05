@@ -38,14 +38,14 @@
 						<div class="field">
 							<%= label_tag :singular, 'sing.' %>
 							<%= select_tag :singular_art, options_for_select(['', 'der', 'die', 'das']) %>
-							<%= text_field_tag :singular %>
+							<%= text_field_tag :singular, @singular %>
 						</div>
 						
 						<!-- plural -->
 						<div class="field" style="padding-bottom: 10px;">
 							<%= label_tag :plural, 'plur.' %>
 							<%= select_tag :plural_art, options_for_select(['', 'der', 'die', 'das']) %>
-							<%= text_field_tag :plural %>
+							<%= text_field_tag :plural, @plural %>
 						</div>
 
 						only for professions/people!
@@ -53,14 +53,14 @@
 						<div class="field" style="padding-top: 8px;">
 							<%= label_tag :fem_sing, 'fem sing.' %>
 							<%= select_tag :fem_sing_art, options_for_select(['', 'der', 'die', 'das']) %>
-							<%= text_field_tag :fem_sing %>
+							<%= text_field_tag :fem_sing, @fem_sing %>
 						</div>
 
 						<!-- feminine plural -->
 						<div class="field">
 							<%= label_tag :fem_plur, 'fem plur.' %>
 							<%= select_tag :fem_plur_art, options_for_select(['', 'der', 'die', 'das']) %>
-							<%= text_field_tag :fem_plur %>
+							<%= text_field_tag :fem_plur, @fem_plur %>
 						</div>
 
 					</td>
