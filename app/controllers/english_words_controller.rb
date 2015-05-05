@@ -36,7 +36,7 @@ class EnglishWordsController < ApplicationController
 
 		respond_to do |format|
 			if @english_word.save
-				format.html { render :new, notice: "#{@english_word.word} and translations created successfully." }
+				format.html { redirect_to new_english_word_path, notice: "'#{@english_word.word}' and translations created successfully." }
 				format.json { render :show, status: :created, location: @english_word }
 			else
 				format.html { redirect_to :back, alert: "there was a problem doing that..." }
