@@ -68,10 +68,7 @@ $(document).ready(function() {
 
 	// erase the word data from our html attribute so sneaky fuckers
 	// like you can't cheat.
-	//
-	// pretty sure the DOM is erasing the data before we actually store it.
-	// stupid ass fucking javascript.  thanks.
-	//$('#quiz_words').attr('data-json', '');
+	$('#quiz_words').attr('data-json', '');
 
 	$('#next_question').click(function(event) {
 
