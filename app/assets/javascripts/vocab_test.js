@@ -69,13 +69,17 @@ $(document).ready(function() {
 	// like you can't cheat.
 	$('#quiz_words').attr('data-json', '');
 
-	$('#next_question').click(function() {
-		// check to see if what the user entered was correct!
+	$('#next_question').click(function(event) {
+		console.log(event.type);
+		event.preventDefault();
+
 		var userArt = $('#german_article').val();
 		var userWord = $('#german_word').val();
 		
 		if (userWord.length > 0) {
+			// check to see if what the user entered was correct!
 			checkAnswer(userArt, userWord);
+
 			if (remainingWords.length > 0) {
 				generateNextWord();
 				$('#german_article').val('');
