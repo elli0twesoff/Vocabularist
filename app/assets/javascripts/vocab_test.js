@@ -57,6 +57,7 @@ function generateNextWord() {
 	// update the fields for the new word.
 	$('#english').html(english);
 	$('#gender').html(gender);
+	$('.question-count').html('words remaining: ' + remainingWords.length);
 }
 
 $(document).ready(function() {
@@ -67,11 +68,12 @@ $(document).ready(function() {
 
 	// erase the word data from our html attribute so sneaky fuckers
 	// like you can't cheat.
-	$('#quiz_words').attr('data-json', '');
+	//
+	// pretty sure the DOM is erasing the data before we actually store it.
+	// stupid ass fucking javascript.  thanks.
+	//$('#quiz_words').attr('data-json', '');
 
 	$('#next_question').click(function(event) {
-		console.log(event.type);
-		event.preventDefault();
 
 		var userArt = $('#german_article').val();
 		var userWord = $('#german_word').val();
