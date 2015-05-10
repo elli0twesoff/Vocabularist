@@ -8,6 +8,9 @@ function getRandomArbitrary(min, max) {
 }
 
 function checkAnswer(userArt, userWord) {
+	// TODO: keep track of incorrectly answered words.  redirect user to
+	// another page rather than to home page to display to them the words they
+	// missed.
 
 	if (userArt == answer['article'] && userWord == answer['word']) {
 		score++;
@@ -55,6 +58,9 @@ function generateNextWord() {
 	}
 
 	// update the fields for the new word.
+	// TODO: we need a field to let the quizzee know if the word
+	// belongs to a certain case or not. ex: mich, dich, etc.
+	// are all for the accusative case.
 	$('#english').html(english);
 	$('#gender').html(gender);
 	$('.question-count').html('words remaining: ' + remainingWords.length);
