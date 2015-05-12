@@ -1,6 +1,7 @@
 class EnglishWordsController < ApplicationController
 	before_action :set_english_word, only: [:show, :edit, :update, :destroy]
-	http_basic_authenticate_with name: ENV['VOCABULARIST_USER'], password: ENV['VOCABULARIST_PASS']
+  before_action :authenticate_user!
+	#http_basic_authenticate_with name: ENV['VOCABULARIST_USER'], password: ENV['VOCABULARIST_PASS']
 
 	def index
 		@english_words = EnglishWord.all
