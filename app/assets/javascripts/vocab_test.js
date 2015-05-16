@@ -1,6 +1,7 @@
 var answer = {};
 var score = 0;
 var remainingWords;
+var wordCount;
 
 
 function getRandomArbitrary(min, max) {
@@ -66,18 +67,7 @@ function generateNextWord() {
 	$('.question-count').html('words remaining: ' + remainingWords.length);
 }
 
-$(document).ready(function() {
-
-	// parse the data out of the div element we're storing our words in.
-	remainingWords = JSON.parse($('#quiz_words').attr('data-json'));
-	var wordCount = remainingWords.length 
-
-	// erase the word data from our html attribute so sneaky fuckers
-	// like you can't cheat.
-	$('#quiz_words').attr('data-json', '');
-
-	$('#next_question').click(function(event) {
-
+function nextQuestion() {
 		var userArt = $('#german_article').val();
 		var userWord = $('#german_word').val();
 		
@@ -105,7 +95,20 @@ $(document).ready(function() {
 			alert("at least try to guess or something...");
 		}
 
-	});
+}
+
+$(document).ready(function() {
+
+	// parse the data out of the div element we're storing our words in.
+	remainingWords = JSON.parse($('#quiz_words').attr('data-json'));
+	wordCount = remainingWords.length 
+
+	// erase the word data from our html attribute so sneaky fuckers
+	// like you can't cheat.
+	$('#quiz_words').attr('data-json', '');
+
+	//$('#next_question').click(function(event) {
+	//});
 
 	generateNextWord();
 });

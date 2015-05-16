@@ -32,18 +32,18 @@
 			</td>
 
 			<td class="germ-td">
-				<form action="javascript:$('#next_question').click();" method="post" id="article_form">
+				<form action="javascript:nextQuestion();" method="post" id="article_form">
           <input id="german_article" name="german_article" size="3" type="text" autocomplete="off" maxlength="3">
 				</form>
 					
-				<form action="javascript:$('#next_question').click();" method="post">
+				<form action="javascript:nextQuestion();" method="post">
 					<input id="german_word" name="german_word" type="text" autocomplete="off">
 				</form>
 			</td>
 
 			<td>
 				<div id="next_question">
-					<%= link_to "next!", "#" %>
+					<%= link_to "next!", "#", onclick: "nextQuestion();" %>
 				</div>
 			</td>
 		</tr>
