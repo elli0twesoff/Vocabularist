@@ -1,12 +1,12 @@
 <h3><strong>vocabularist!</strong></h3>
 
 <p>
-	select your quiz options: 
+select your quiz options: 
 </p>
 
 <%= form_tag(controller: 'vocab_tests', action: 'start') do |f| %>
 
-	
+
 	<table class='index'>
 		<tr>
 			<td>
@@ -20,6 +20,10 @@
 			<td>
 				chapter 3
 				<%= check_box_tag 'chapters[]', 3 %>
+			</td>
+			<td>
+				chapter 4
+				<%= check_box_tag 'chapters[]', 4 %>
 			</td>
 		</tr>
 
@@ -45,21 +49,21 @@
 <% end %>
 
 <p>
-	<strong>vocab lists:</strong><br />
-	<%= link_to 'chapter 1', 'https://docs.google.com/document/d/1vKdvG-GPAHyXNW5vV-hlRomsILJlBETH9AY8h8K1hIE/edit?usp=sharing', target: '_blank' %><br />
-	<%= link_to 'chapter 2', 'https://docs.google.com/document/d/1DwlMwllL1nOUFM9_XzJYaL-e6E4PsVZSnThRE9j35_Q/edit?usp=sharing', target: '_blank' %><br />
+<strong>vocab lists:</strong><br />
+<%= link_to 'chapter 1', 'https://docs.google.com/document/d/1vKdvG-GPAHyXNW5vV-hlRomsILJlBETH9AY8h8K1hIE/edit?usp=sharing', target: '_blank' %><br />
+<%= link_to 'chapter 2', 'https://docs.google.com/document/d/1DwlMwllL1nOUFM9_XzJYaL-e6E4PsVZSnThRE9j35_Q/edit?usp=sharing', target: '_blank' %><br />
 </p>
 
 <p>
-	<strong>edit words for:</strong><br />
-	<%= link_to 'english', english_words_path %><br />
+<strong>edit words for:</strong><br />
+<%= link_to 'english', english_words_path %><br />
 </p>
 
 <p>
-	find the github repository <%= link_to 'here!', 'https://github.com/elliotwesoff/Vocabularist' %>
+find the github repository <%= link_to 'here!', 'https://github.com/elliotwesoff/Vocabularist' %>
 </p>
 
 <p>
-	please send any recommendations/bugs/spelling errors/love letters to elliot wesoff at <%= link_to 'ewesoff@gmail.com', 'mailto:ewesoff@gmail.com' %>.  thanks!
+please send any recommendations/bugs/spelling errors/love letters to elliot wesoff at <%= link_to 'ewesoff@gmail.com', 'mailto:ewesoff@gmail.com' %>.  thanks!
 </p>
 
