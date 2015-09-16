@@ -4,6 +4,7 @@ var remainingWords;
 var wordCount;
 var correct = [];
 var incorrect = [];
+var wait = false;
 
 
 function getRandomArbitrary(min, max) {
@@ -20,7 +21,7 @@ function checkAnswer(userArt, userWord) {
         showIncorrect();
     }
 
-    setTimeout(function() { clearAnswer() }, 4000);
+    clearAnswer();
 }
 
 function showCorrect() {
@@ -37,7 +38,12 @@ function showIncorrect() {
 }
 
 function clearAnswer() {
-    $('.answer').hide();
+    if (!wait) {
+        setTimeout(function() { 
+            $('.answer').hide();
+            wait = true;
+        }, 5000);
+    }
 }
 
 function generateNextWord() {
