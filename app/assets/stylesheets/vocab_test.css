@@ -3,7 +3,7 @@ td {
 }
 
 th {
-	text-align: left;
+	text-align: center;
 	width: 150px;
 }
 
@@ -13,7 +13,7 @@ th {
 
 
 .add-word td, th {
-	width: 320px;
+	/*width: 320px;*/
 }
 
 #article_form {
@@ -21,8 +21,20 @@ th {
 	padding-right: 5px;
 }
 
-.umlaut {
+.umlaut, .weirdos {
     float: left;
-    padding: 5px;
+    margin: 5px;
     font-size: 16pt;
+}
+
+
+.quiz-area {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.table-area {
+    width: 50%;
+    margin: auto;
 }

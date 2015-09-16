@@ -115,4 +115,10 @@ $(document).ready(function() {
             $('#german_word')[0].focus();
         }
     });
+
+    $('.umlaut').click(function() {
+        var letter = $(this).text();
+        var input = $('#german_word').val();
+        $('#german_word').val(input + letter);
+    });
 });
