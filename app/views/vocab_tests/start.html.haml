@@ -23,11 +23,12 @@
           #english
 
         %td.germ-td
-          %form{action: "javascript:nextQuestion();", method: "post", id: "article_form"}
-            %input{id: "german_article", name: "german_article", size: "3", type: "text", autocomplete: "off", maxlength:"3" }
-            
-          %form{action: "javascript:nextQuestion();", method: "post"}
-            %input{id: "german_word", name: "german_word", type: "text", autocomplete: "off"}
+          .ghetto-ass
+            %form{action: "javascript:nextQuestion();", method: "post", id: "article_form"}
+              %input{id: "german_article", name: "german_article", size: "3", type: "text", autocomplete: "off", maxlength:"3" }
+              
+            %form{action: "javascript:nextQuestion();", method: "post", id: "word_form"}
+              %input{id: "german_word", name: "german_word", type: "text", autocomplete: "off"}
 
   %p
     click one of the weird letters to put it in the form: 

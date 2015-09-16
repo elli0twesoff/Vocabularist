@@ -15,7 +15,7 @@ th {
 }
 
 .germ-td {
-	width: 180px;
+	/*width: 180px;*/
 }
 
 #gender {
@@ -23,13 +23,13 @@ th {
     min-height: 20px;
 }
 
-.add-word td, th {
-	/*width: 320px;*/
+#article_form {
+    float: left;
+    padding-right: 5px;
 }
 
-#article_form {
-	float: left;
-	padding-right: 5px;
+#word_form {
+    float: left;
 }
 
 .umlaut, .weirdos {
@@ -52,13 +52,17 @@ th {
 
 .quiz-area {
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
 .table-area {
     width: 50%;
     margin: auto;
+}
+
+.table-area table {
+    width: 100%;
 }
 
 .question-count {
@@ -80,4 +84,8 @@ th {
 
 .incorrect {
     border: 1px solid red;
+}
+
+.ghetto-ass {
+    margin: auto;
 }

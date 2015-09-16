@@ -61,8 +61,11 @@ function generateNextWord() {
 
     if (germanArt == '') {
         $('#article_form').hide();
+        $('.ghetto-ass').width('50%');
     } else {
         $('#article_form').show();
+        $('.ghetto-ass').width();
+        $('.ghetto-ass').width('80%');
     }
 
     if (wordSelector == 0) {
