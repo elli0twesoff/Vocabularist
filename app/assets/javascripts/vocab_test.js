@@ -2,6 +2,8 @@ var answer = {};
 var score = 0;
 var remainingWords;
 var wordCount;
+var correct = [];
+var incorrect = [];
 
 
 function getRandomArbitrary(min, max) {
@@ -13,13 +15,15 @@ function checkAnswer(userArt, userWord) {
 	// another page rather than to home page to display to them the words they
 	// missed.
 
-	if (userArt == answer['article'] && userWord == answer['word']) {
+	if (userArt.toLowerCase() == answer['article'].toLowerCase() && userWord.toLowerCase() == answer['word'].toLowerCase()) {
 		score++;
+        correct.push({ article: answer['article'], word: answer['word']);
 		// TODO:
 		// constant alerts are annoying. let's maybe put a green check
 		// next to the next button or something so the user knows they
 		// answered correctly?
 	} else {
+        incorrect.push({ userArt: userArt, userWord: userWord, correctArt: answer['article'], correctWord: answer['word']);
 		// TODO:
 		// let's make this an html notice as well.  any kind of popup notices
 		// are annoying.  they're just ghetto n shit.
@@ -105,4 +109,11 @@ $(document).ready(function() {
 
 	generateNextWord();
 
+    // give the word input focus if we enter in der/die/das
+    // in the article field.
+    $('#german_article').on('input', function() {
+        if ($(this).val().length == 3) {
+            $('#german_word')[0].focus();
+        }
+    });
 });
