@@ -11,24 +11,33 @@ function getRandomArbitrary(min, max) {
 }
 
 function checkAnswer(userArt, userWord) {
-    // TODO: keep track of incorrectly answered words.  redirect user to
-    // another page rather than to home page to display to them the words they
-    // missed.
-
     if (userArt.toLowerCase() == answer['article'].toLowerCase() && userWord.toLowerCase() == answer['word'].toLowerCase()) {
+        correct.push({ article: answer['article'], word: answer['word'] });
+        showCorrect();
         score++;
-        correct.push({ article: answer['article'], word: answer['word']});
-        // TODO:
-        // constant alerts are annoying. let's maybe put a green check
-        // next to the next button or something so the user knows they
-        // answered correctly?
     } else {
-        incorrect.push({ userArt: userArt, userWord: userWord, correctArt: answer['article'], correctWord: answer['word']});
-        // TODO:
-        // let's make this an html notice as well.  any kind of popup notices
-        // are annoying.  they're just ghetto n shit.
-        alert('sorry, the answer is ' + answer['article'] + ' ' + answer['word'] + '.');
+        incorrect.push({ userArt: userArt, userWord: userWord, correctArt: answer['article'], correctWord: answer['word'] });
+        showIncorrect();
     }
+
+    setTimeout(function() { clearAnswer() }, 4000);
+}
+
+function showCorrect() {
+    $('.answer').text('Ja!');
+    $('.answer').attr('class', 'answer correct');
+    $('.answer').show();
+}
+
+function showIncorrect() {
+    var article = answer['article'] == '' ? '' : answer['article'] + ' ';
+    $('.answer').attr('class', 'answer incorrect');
+    $('.answer').text('sorry, the answer was ' + article + answer['word']);
+    $('.answer').show();
+}
+
+function clearAnswer() {
+    $('.answer').hide();
 }
 
 function generateNextWord() {
@@ -96,6 +105,9 @@ function nextQuestion() {
         } else {
             var percentage = Math.round((score / wordCount) * 100) + "%";
             alert("you're done!  you got " + score + " out of " + wordCount + " (" + percentage +"), correct.");
+
+            // TODO: rather than redirecting home, either redirect them to a results page,
+            // or just show the results on the same page.
             window.location = '/';
         }
 

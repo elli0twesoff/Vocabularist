@@ -3,6 +3,7 @@ td {
 }
 
 th {
+    padding-top: 10px;
 	text-align: center;
 	width: 150px;
 }
@@ -64,6 +65,9 @@ th {
     padding: 20px;
 }
 
+.answer-container {
+    min-height: 40px;
+}
 .answer {
     padding: 10px;
 }

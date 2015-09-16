@@ -2,9 +2,9 @@
 
 .center
   .question-count
+  .answer-container
+    .answer
 
-  .answer
-    hahahaha
 .quiz-area
   .table-area
     %table
@@ -28,10 +28,6 @@
             
           %form{action: "javascript:nextQuestion();", method: "post"}
             %input{id: "german_word", name: "german_word", type: "text", autocomplete: "off"}
-
-          -#%td
-            -##next_question
-              -#= link_to "next!", "#", onclick: "nextQuestion();"
 
   %p
     click one of the weird letters to put it in the form: 
