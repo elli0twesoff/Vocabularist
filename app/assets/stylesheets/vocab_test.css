@@ -23,4 +23,6 @@ th {
 
 .umlaut {
     float: left;
+    padding: 5px;
+    font-size: 16pt;
 }
