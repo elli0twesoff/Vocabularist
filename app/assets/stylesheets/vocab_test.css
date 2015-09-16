@@ -7,10 +7,20 @@ th {
 	width: 150px;
 }
 
+.center {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
 .germ-td {
 	width: 180px;
 }
 
+#gender {
+    text-align: center;
+    min-height: 20px;
+}
 
 .add-word td, th {
 	/*width: 320px;*/
@@ -23,10 +33,21 @@ th {
 
 .umlaut, .weirdos {
     float: left;
-    margin: 5px;
+    padding: 7px;
     font-size: 16pt;
 }
 
+.weirdos {
+    padding-right: 33%;
+}
+
+.deselected {
+    border: 2px solid white;
+}
+
+.selected {
+    border-bottom: 2px solid red;
+}
 
 .quiz-area {
     text-align: center;
@@ -37,4 +58,20 @@ th {
 .table-area {
     width: 50%;
     margin: auto;
+}
+
+.question-count {
+    padding: 20px;
+}
+
+.answer {
+    padding: 10px;
+}
+
+.correct {
+    border: 1px solid blue;
+}
+
+.incorrect {
+    border: 1px solid red;
 }

@@ -50,6 +50,12 @@ function generateNextWord() {
         wordSelector = getRandomArbitrary(0, 1);
     }
 
+    if (germanArt == '') {
+        $('#article_form').hide();
+    } else {
+        $('#article_form').show();
+    }
+
     if (wordSelector == 0) {
         // give the user a singular word.
         answer['article'] = germanArt;
@@ -64,10 +70,9 @@ function generateNextWord() {
     // update the fields for the new word.
     // TODO: we need a field to let the quizzee know if the word
     // belongs to a certain case or not. ex: mich, dich, etc.
-    // are all for the accusative case.
     $('#english').html(english);
     $('#gender').html(gender);
-    $('.question-count').html('words remaining: ' + remainingWords.length);
+    $('.question-count').html(remainingWords.length + ' word(s) remain.');
 }
 
 function nextQuestion() {
@@ -119,6 +124,9 @@ $(document).ready(function() {
     $('.umlaut').click(function() {
         var letter = $(this).text();
         var input = $('#german_word').val();
+        $('.umlaut').attr('class', 'umlaut deselected');
+        $(this).attr('class', 'umlaut selected');
         $('#german_word').val(input + letter);
+        $('#german_word')[0].focus();
     });
 });

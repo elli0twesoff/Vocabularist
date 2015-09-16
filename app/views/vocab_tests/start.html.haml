@@ -1,21 +1,16 @@
 = javascript_include_tag params[:controller]
 
-= link_to 'vocabularist home', root_path
-
-%p
-  %strong
-    %u quiz on german words:
-
-%br
-%p
+.center
   .question-count
 
+  .answer
+    hahahaha
 .quiz-area
   .table-area
     %table
       %thead
         %th english:
-        %th german:
+        %th.german german:
       %tbody
 
       %tr
@@ -34,20 +29,20 @@
           %form{action: "javascript:nextQuestion();", method: "post"}
             %input{id: "german_word", name: "german_word", type: "text", autocomplete: "off"}
 
-          %td
-            #next_question
-              = link_to "next!", "#", onclick: "nextQuestion();"
+          -#%td
+            -##next_question
+              -#= link_to "next!", "#", onclick: "nextQuestion();"
 
   %p
     click one of the weird letters to put it in the form: 
     .weirdos
-    .umlaut Ä
-    .umlaut ä
-    .umlaut Ö
-    .umlaut ö
-    .umlaut Ü
-    .umlaut ü
-    .umlaut ß
+    .umlaut.deselected Ä
+    .umlaut.deselected ä
+    .umlaut.deselected Ö
+    .umlaut.deselected ö
+    .umlaut.deselected Ü
+    .umlaut.deselected ü
+    .umlaut.deselected ß
   %br
 
 #quiz_words
