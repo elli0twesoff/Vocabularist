@@ -47,7 +47,7 @@ th {
 }
 
 .selected {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid brown;
 }
 
 .quiz-area {
@@ -67,7 +67,9 @@ th {
 
 .answer-container {
     min-height: 40px;
+    max-height: 40px;
 }
+
 .answer {
     padding: 10px;
 }
