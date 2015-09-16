@@ -21,7 +21,7 @@ function checkAnswer(userArt, userWord) {
         showIncorrect();
     }
 
-    clearAnswer();
+    setTimeout(function() { clearAnswer() }, 5000);
 }
 
 function showCorrect() {
@@ -38,12 +38,7 @@ function showIncorrect() {
 }
 
 function clearAnswer() {
-    if (!wait) {
-        setTimeout(function() { 
-            $('.answer').hide();
-            wait = true;
-        }, 5000);
-    }
+    $('.answer').hide();
 }
 
 function generateNextWord() {
