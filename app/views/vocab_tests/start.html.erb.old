@@ -6,7 +6,7 @@
 
 <p>
 	here are the weird german letters with the dots over them and stuff:
-		<font style='font-size: large;'><strong>Ä ä Ö ö Ü ü ß</strong></font>
+  <div>Ä ä Ö ö Ü ü ß<div/>
 </p>
 
 <div class='question-count'></div>

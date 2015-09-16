@@ -1,0 +1,61 @@
+= link_to 'home', root_path
+
+%p
+  %strong
+    %u quiz on german words:
+
+%p here are the weird german letters with the dots over them and stuff:
+.umlaut
+  Ä
+.umlaut
+  ä
+.umlaut
+  Ö
+.umlaut
+  ö
+.umlaut
+  Ü
+.umlaut
+  ü
+.umlaut
+  ß
+
+.question-count
+%br
+
+.quiz-area
+  %table
+    %thead
+      %th english:
+      %th german:
+    %tbody
+
+    %tr
+      %td
+      %td
+        #gender
+
+    %tr
+      %td
+        #english
+
+      %td.germ-td
+        %form{action: "javascript:nextQuestion();", method: "post", id: "article_form"}
+          %input{id: "german_article", name: "german_article", size: "3", type: "text", autocomplete: "off", maxlength:"3" }
+					
+        %form{action: "javascript:nextQuestion();", method: "post"}
+          %input{id: "german_word", name: "german_word", type: "text", autocomplete: "off"}
+
+        %td
+          #next_question
+            = link_to "next!", "#", onclick: "nextQuestion();"
+
+
+%p
+  if you're using firefox or IE, please use the 'next!' link to proceed to the next word.
+  %br
+  i'm still working on getting this bug sorted out... thanks!
+
+#quiz_words
+  :javascript
+     $('#quiz_words').data('words', #{@words_json});

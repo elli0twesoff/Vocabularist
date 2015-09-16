@@ -100,15 +100,9 @@ function nextQuestion() {
 $(document).ready(function() {
 
 	// parse the data out of the div element we're storing our words in.
-	remainingWords = JSON.parse($('#quiz_words').attr('data-json'));
+	remainingWords = $('#quiz_words').data('words');
 	wordCount = remainingWords.length 
 
-	// erase the word data from our html attribute so sneaky fuckers
-	// like you can't cheat.
-	$('#quiz_words').attr('data-json', '');
-
-	//$('#next_question').click(function(event) {
-	//});
-
 	generateNextWord();
+
 });
