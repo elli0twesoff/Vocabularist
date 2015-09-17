@@ -1,0 +1,59 @@
+.center
+  %h3
+    vocabularist!
+
+  %p
+    select your quiz options: 
+
+  = form_tag(controller: 'vocab_tests', action: 'start') do |f|
+    %table.index
+      %tr
+        %td
+          chapter 1 
+          = check_box_tag 'chapters[]', 1
+        %td
+          chapter 2
+          = check_box_tag 'chapters[]', 2
+        %td
+          chapter 3
+          = check_box_tag 'chapters[]', 3
+        %td
+          chapter 4
+          = check_box_tag 'chapters[]', 4
+
+      %tr
+        %td{colspan: '2'}
+          = label_tag :question_limit, 'question limit?'
+          = text_field_tag :question_limit, "", size: 2
+
+      %tr
+        %td{colspan: '2'}
+          = label_tag :nouns_only, 'nouns only?'
+          = check_box_tag :nouns_only
+
+      %tr
+        %td
+          = submit_tag 'english'
+
+
+  %p
+    %strong vocab lists:
+  = link_to 'chapter 1', 'https://docs.google.com/document/d/1vKdvG-GPAHyXNW5vV-hlRomsILJlBETH9AY8h8K1hIE/edit?usp=sharing', target: '_blank'
+  %br
+  = link_to 'chapter 2', 'https://docs.google.com/document/d/1DwlMwllL1nOUFM9_XzJYaL-e6E4PsVZSnThRE9j35_Q/edit?usp=sharing', target: '_blank'
+  %br
+
+  %p
+    %strong edit words for:
+    = link_to 'english', english_words_path
+
+  %br
+
+  %p
+    find the github repository 
+    = link_to 'here!', 'https://github.com/elliotwesoff/Vocabularist', target: '_blank'
+
+  %p
+    please send any recommendations/bugs/spelling errors/love letters to elliot wesoff at
+    = link_to 'ewesoff@gmail.com', 'mailto:ewesoff@gmail.com'
+
