@@ -1,3 +1,7 @@
-.index td {
+table.index {
+    width: 100%;
+}
+
+table.index td {
 	padding: 10px;
 }

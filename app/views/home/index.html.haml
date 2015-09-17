@@ -6,6 +6,7 @@
     select your quiz options: 
 
   = form_tag(controller: 'vocab_tests', action: 'start') do |f|
+
     %table.index
       %tr
         %td
@@ -22,17 +23,17 @@
           = check_box_tag 'chapters[]', 4
 
       %tr
-        %td{colspan: '2'}
+        %td{colspan: '4'}
           = label_tag :question_limit, 'question limit?'
-          = text_field_tag :question_limit, "", size: 2
+          = number_field_tag :question_limit, size: 2
 
       %tr
-        %td{colspan: '2'}
+        %td{colspan: '4'}
           = label_tag :nouns_only, 'nouns only?'
           = check_box_tag :nouns_only
 
       %tr
-        %td
+        %td{colspan: '4'}
           = submit_tag 'english'
 
 
@@ -42,6 +43,11 @@
   %br
   = link_to 'chapter 2', 'https://docs.google.com/document/d/1DwlMwllL1nOUFM9_XzJYaL-e6E4PsVZSnThRE9j35_Q/edit?usp=sharing', target: '_blank'
   %br
+
+  %p
+    %strong
+      about:
+  %iframe{width: "420", height: "315", src: "https://www.youtube.com/embed/nGeKSiCQkPw", frameborder: "0"}
 
   %p
     %strong edit words for:
