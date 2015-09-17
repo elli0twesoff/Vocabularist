@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :payments
+
   devise_for :users
   resources :german_words
   resources :english_words

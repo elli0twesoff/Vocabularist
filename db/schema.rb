@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150917051113) do
+ActiveRecord::Schema.define(version: 20150917060745) do
 
   create_table "english_words", force: true do |t|
     t.string   "word"
@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(version: 20150917051113) do
     t.string   "article"
     t.string   "gender"
     t.integer  "english_word_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "payments", force: true do |t|
+    t.string   "email"
+    t.string   "stripe_id"
+    t.string   "amount"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
