@@ -23,3 +23,29 @@ body {
     margin: auto;
     text-align: center;
 }
+
+* {
+    margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.container {
+	min-height: 100%;
+	margin: 0 auto -20px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+	height: 20px; /* .push must be the same height as .footer */
+}
+
+.footer {
+    border-top: 1px solid black;
+    font-size: 12pt;
+}
+
+p, h3 {
+    margin: 20px;
+}
