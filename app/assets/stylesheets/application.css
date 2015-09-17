@@ -49,3 +49,16 @@ html, body {
 p, h3 {
     margin: 25px;
 }
+
+.alert {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.alert-notice {
+    border: 1px solid blue;
+}
+
+.alert-alert {
+    border: 1px solid red;
+}
