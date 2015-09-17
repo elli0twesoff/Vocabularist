@@ -62,3 +62,12 @@ p, h3 {
 .alert-alert {
     border: 1px solid red;
 }
+
+#error_explanation {
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.field_with_errors {
+    margin: auto;
+}

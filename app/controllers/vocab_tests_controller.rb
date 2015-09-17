@@ -3,7 +3,7 @@ class VocabTestsController < ApplicationController
     if params[:chapters]
       if params[:commit] == 'start'
 
-        if !current_user || !current_user.admin?
+        if authenticated?
           params[:chapters].each do |chap|
             if chap.to_i > 1
               redirect_to root_path, notice: "please sign in with an activated account to use chapters beyond chapter 1. thank you."
