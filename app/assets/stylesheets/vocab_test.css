@@ -39,7 +39,7 @@ th {
 }
 
 .weirdos {
-    padding-right: 33%;
+    padding-right: 40%;
 }
 
 .deselected {
@@ -47,7 +47,7 @@ th {
 }
 
 .selected {
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid red;
 }
 
 .quiz-area {

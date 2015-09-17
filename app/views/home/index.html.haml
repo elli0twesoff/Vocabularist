@@ -34,7 +34,7 @@
 
       %tr
         %td{colspan: '4'}
-          = submit_tag 'english'
+          = submit_tag 'start'
 
 
   %p
@@ -49,11 +49,13 @@
       about:
   %iframe{width: "420", height: "315", src: "https://www.youtube.com/embed/nGeKSiCQkPw", frameborder: "0"}
 
-  %p
-    %strong edit words for:
-    = link_to 'english', english_words_path
+  - if current_user && current_user.admin?
 
-  %br
+    %p
+      %strong edit words for:
+      %br
+      = link_to 'english', english_words_path
+
 
   %p
     find the github repository 

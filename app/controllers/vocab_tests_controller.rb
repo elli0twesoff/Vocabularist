@@ -1,7 +1,7 @@
 class VocabTestsController < ApplicationController
   def start
 		if params[:chapters]
-			if params[:commit] == 'english'
+			if params[:commit] == 'start'
 
 				@words = EnglishWord.get_test_words(params)
 				@words_json = EnglishWord.get_json_words(@words)
