@@ -61,6 +61,14 @@ class GermanWordsController < ApplicationController
     end
   end
 
+  def load_from_file
+    @file_data = File.open("word_lists/1-de.json", "r").read
+  end
+
+  def update_words
+    words = JSON.parse(params[:word_data])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_german_word

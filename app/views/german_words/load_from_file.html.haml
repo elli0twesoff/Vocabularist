@@ -1,0 +1,8 @@
+= stylesheet_link_tag params[:controller]
+
+.field-container
+  = form_tag("#{german_words_update_words_path}", method: :put) do
+    = submit_tag "Update", class: "tag"
+    %br
+    = text_area_tag "word_data", @file_data, cols: "100", rows: "50", class: "tag"
+ 

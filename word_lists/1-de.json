@@ -1,0 +1,18 @@
+{
+    "old" : {
+        "article" : null,
+        "word" : "alt",
+        "plural" : null
+    },
+
+   "American" : {
+       "article" : "der",
+       "word" : "Mann",
+       "plural" : {
+           "article" : "die",
+           "word" : "Männer" 
+       }
+       
+   } 
+
+}
