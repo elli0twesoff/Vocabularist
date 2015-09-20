@@ -1,6 +1,6 @@
 class EnglishWord < ActiveRecord::Base
-	has_many :german_words, dependent: :destroy
-	has_many :plurals, dependent: :destroy
+	has_many :german_words
+	has_many :plurals
 
 	def create_translations(params)
 		#  this is probably real disgusting but i'm super fuckin burnt out n tird rn so

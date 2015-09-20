@@ -67,6 +67,11 @@ class GermanWordsController < ApplicationController
 
   def update_words
     words = JSON.parse(params[:word_data])
+    GermanWord.update_words(words)
+    redirect_to :back, flash: { success: "Successfully updated words." }
+
+  rescue Exception => e
+    redirect_to :back, flash: { warning: e.message }
   end
 
   private

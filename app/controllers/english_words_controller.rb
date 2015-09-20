@@ -1,5 +1,5 @@
 class EnglishWordsController < ApplicationController
-	#before_action :set_english_word, only: [:show, :edit, :update, :destroy]
+  before_action :set_english_word, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
 	def index

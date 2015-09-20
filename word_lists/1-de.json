@@ -1,16 +1,18 @@
 {
     "old" : {
-        "article" : null,
-        "word" : "alt",
-        "plural" : null
+        "chapter" : 1,
+        "word" : "alt"
     },
 
    "American" : {
+       "chapter" : 1,
        "article" : "der",
        "word" : "Mann",
+       "gender" : "singular",
        "plural" : {
            "article" : "die",
-           "word" : "Männer" 
+           "word" : "Männer" ,
+           "gender" : "plural"
        }
        
    } 
