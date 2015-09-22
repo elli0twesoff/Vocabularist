@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   put 'german_words/update_words', to: 'german_words#update_words'
 	post 'vocab_tests/start', to: 'vocab_tests#start'
 	post 'vocab_tests/complete_test', to: 'vocab_tests#complete_test'
+  get 'payments/new', to: 'payments#new', as: 'subscribe'
 
   devise_for :users
   resources :german_words
