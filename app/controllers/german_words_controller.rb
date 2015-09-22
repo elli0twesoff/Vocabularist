@@ -62,7 +62,7 @@ class GermanWordsController < ApplicationController
   end
 
   def load_from_file
-    @file_data = File.open("word_lists/1-de.json", "r").read
+    @file_data = File.open("word_lists/de.json", "r").read
   end
 
   def update_words

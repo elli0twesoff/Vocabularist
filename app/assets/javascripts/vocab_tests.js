@@ -12,7 +12,7 @@ function getRandomArbitrary(min, max) {
 }
 
 function checkAnswer(userArt, userWord) {
-    if (userArt.toLowerCase() == answer['article'].toLowerCase() && userWord.toLowerCase() == answer['word'].toLowerCase()) {
+    if (checkArticle(userArt) && checkWord(userWord)) {
         correct.push({ article: answer['article'], word: answer['word'] });
         showCorrect();
         score++;
@@ -24,6 +24,30 @@ function checkAnswer(userArt, userWord) {
     setTimeout(function() { clearAnswer() }, 5000);
 }
 
+function checkArticle(art) {
+    var ans;
+
+    if (answer['article'] == null) {
+        ans = true;
+    } else {
+        ans = art.toLowerCase() == answer['article'].toLowerCase() ? true : false;
+    }
+
+    return ans;
+}
+
+function checkWord(word) {
+    var ans;
+
+    if (word.toLowerCase() == answer['word'].toLowerCase()) {
+        ans = true;
+    } else {
+       ans = false;
+    }
+
+    return ans;
+}
+
 function showCorrect() {
     $('.answer').text('Ja!');
     $('.answer').attr('class', 'answer correct');
@@ -31,7 +55,7 @@ function showCorrect() {
 }
 
 function showIncorrect() {
-    var article = answer['article'] == '' ? '' : answer['article'] + ' ';
+    var article = answer['article'] == null ? '' : answer['article'] + ' ';
     $('.answer').attr('class', 'answer incorrect');
     $('.answer').text('sorry, the answer was ' + article + answer['word']);
     $('.answer').show();
@@ -59,8 +83,9 @@ function generateNextWord() {
         var pluralArt = plural['article'];
         wordSelector = getRandomArbitrary(0, 1);
     }
+    console.log(germanArt);
 
-    if (germanArt == '') {
+    if (germanArt == null) {
         $('#article_form').hide();
         $('.ghetto-ass').width('50%');
     } else {
@@ -101,7 +126,7 @@ function nextQuestion() {
             $('#german_article').val('');
             $('#german_word').val('');
 
-            if (answer['article'] != '') {
+            if (answer['article'] != null) {
                 $('#german_article')[0].focus();
             } else {
                 $('#german_word')[0].focus();

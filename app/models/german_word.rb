@@ -5,10 +5,12 @@ class GermanWord < ActiveRecord::Base
 	scope :nouns, -> { where("gender != ''") }
 
   def self.update_words(words)
+    
+    # we're loading them all back into the database anyways, whatevs.
+    GermanWord.destroy_all
+
     words.keys.each do |word|
       en = EnglishWord.find_or_create_by(word: word, chapter: words[word]['chapter'])
-      en.german_words.destroy_all
-      en.plurals.destroy_all
 
       new_deutsch = en.german_words.create(
             word: words[word]['word'],
