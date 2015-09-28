@@ -1,0 +1,18 @@
+.center
+  .payment
+    %h3{ style: "margin: 0;" } payment details
+
+    %table.payment-details
+      %tr
+        %td email:
+        %td #{current_user.email}
+
+      %tr
+        %td amount:
+        %td $5.00
+
+      %tr
+        %td.disclaimer{ colspan: '2' }
+          = link_to 'disclaimer', disclaimer_path, target: '_blank'
+
+    = render 'form'

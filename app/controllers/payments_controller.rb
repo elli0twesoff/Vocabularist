@@ -1,45 +1,55 @@
 class PaymentsController < ApplicationController
-  before_action :set_payment, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:disclaimer, :webhooks]
 
   respond_to :html
-
-  def index
-    @payments = Payment.all
-    respond_with(@payments)
-  end
-
-  def show
-    respond_with(@payment)
-  end
 
   def new
     @payment = Payment.new
     respond_with(@payment)
   end
 
-  def edit
-  end
-
   def create
-    @payment = Payment.new(payment_params)
-    @payment.save
-    respond_with(@payment)
+    @amount = 500 # cents, not dollars :P
+    @user = User.find_by(email: params[:stripeEmail])
+
+    customer = if current_user.stripe_id
+      Stripe::Customer.retrieve(current_user.stripe_id)
+    else
+      Stripe::Customer.create
+    end
+     
+    customer.email = @user.email
+    customer.card  = params[:stripeToken]
+    customer.save
+
+    charge = Stripe::Charge.create(
+      :customer    => customer.id,
+      :amount      => @amount,
+      :description => 'Vocabularist customer',
+      :currency    => 'usd'
+    )
+
+    @user.stripe_id = customer.id
+    @user.activated = true
+    @user.save
+
+    redirect_to root_path, notice: "Your payment has been recieved, and you are free to use the rest of the application.  Thank you!"
+
+  rescue Stripe::CardError => e
+    redirect_to :back, error: e.message
+  rescue Exception => e
+    puts "Unexpected error in user signup: \n => #{e.message}"
+    e.backtrace.each { |m| puts "\tfrom #{m}" }
+    redirect_to :back, error: "An unexpected error occurred processing your payment. Sorry about that."
   end
 
-  def update
-    @payment.update(payment_params)
-    respond_with(@payment)
-  end
-
-  def destroy
-    @payment.destroy
-    respond_with(@payment)
+  def disclaimer
   end
 
   def webooks
     # thank god stripe provided all this cool stuff.  i'm just wayyy too lazy fo dat.
     Payment.process_stripe_webhook(params)
-  
+
     # Use Stripe's bindings...
   rescue Stripe::CardError => e
     # Since it's a decline, Stripe::CardError will be caught
@@ -74,11 +84,11 @@ class PaymentsController < ApplicationController
   end
 
   private
-    def set_payment
-      @payment = Payment.find(params[:id])
-    end
+  def set_payment
+    @payment = Payment.find(params[:id])
+  end
 
-    def payment_params
-      params.require(:payment).permit(:email, :stripe_id, :amount, :status)
-    end
+  def payment_params
+    params.require(:payment).permit(:email, :stripe_id, :amount, :status)
+  end
 end

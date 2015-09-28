@@ -1,0 +1,8 @@
+= form_for process_payment_path do |f|
+
+  %script{  :src                => 'https://checkout.stripe.com/checkout.js',
+            :class              => 'stripe-button',
+            "data-email"        => "#{current_user.email}",
+            "data-key"          => "#{Rails.configuration.stripe[:publishable_key]}",
+            "data-amount"       => "500" }
+
