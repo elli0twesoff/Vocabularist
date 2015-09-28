@@ -20,7 +20,7 @@
       </div>
 
 			<% flash.each do |key, value| %>
-				<div class="center alert alert-<%= key %>"><%= value %></div>
+				<div class="center alert alert-<%= key %>"><%= value.html_safe %></div>
 			<% end %>
 
 			<%= yield %>
