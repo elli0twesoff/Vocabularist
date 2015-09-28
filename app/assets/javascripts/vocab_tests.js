@@ -150,9 +150,9 @@ $(document).ready(function() {
 
     // parse the data out of the div element we're storing our words in.
     remainingWords = $('#quiz_words').data('words');
-    wordCount = remainingWords.length 
+    wordCount = remainingWords.length;
 
-        generateNextWord();
+    generateNextWord();
 
     // give the word input focus if we enter in der/die/das
     // in the article field.
@@ -162,6 +162,8 @@ $(document).ready(function() {
         }
     });
 
+    // if the user needs to enter an umlaut character, append 
+    // the clicked character to what's currently in the word field.
     $('.umlaut').click(function() {
         var letter = $(this).text();
         var input = $('#german_word').val();

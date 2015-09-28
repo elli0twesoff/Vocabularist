@@ -28,6 +28,12 @@
       <div class='push'></div>
 		</div>
 
-    <div class='footer center'>© <%= Time.now.year %> elliot wesoff</div>
+    <div class='footer center'>
+      © <%= Time.now.year %> elliot wesoff
+      <% unless @disclaimer %>
+        | 
+        <%= link_to 'disclaimer & privacy policy', disclaimer_path %>
+      <% end %>
+    </div>
 	</body>
 </html>

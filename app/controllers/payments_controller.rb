@@ -22,6 +22,9 @@ class PaymentsController < ApplicationController
     customer.card  = params[:stripeToken]
     customer.save
 
+    @user.stripe_id = customer.id
+    @user.save
+
     charge = Stripe::Charge.create(
       :customer    => customer.id,
       :amount      => @amount,
@@ -29,21 +32,32 @@ class PaymentsController < ApplicationController
       :currency    => 'usd'
     )
 
-    @user.stripe_id = customer.id
     @user.activated = true
     @user.save
 
-    redirect_to root_path, notice: "Your payment has been recieved, and you are free to use the rest of the application.  Thank you!"
+    Payment.create(
+      email:      @user.email,
+      stripe_id:  @user.stripe_id,
+      status:     "success"
+    )
+
+    # TODO: email a receipt to the user.
+
+    redirect_to root_path, notice: "Your payment has been recieved, and you are now free to use the rest of the site.  Thank you!"
 
   rescue Stripe::CardError => e
-    redirect_to :back, error: e.message
+    puts "Stripe card error: #{e.message}"
+    e.backtrace.each { |m| "\tfrom #{m}" }
+    redirect_to :back, flash: { alert: e.message }
   rescue Exception => e
     puts "Unexpected error in user signup: \n => #{e.message}"
     e.backtrace.each { |m| puts "\tfrom #{m}" }
-    redirect_to :back, error: "An unexpected error occurred processing your payment. Sorry about that."
+    redirect_to :back, flash: { alert: "An unexpected error occurred processing your payment. Sorry about that." }
   end
 
   def disclaimer
+    # hide the link from the footer.
+    @disclaimer = true
   end
 
   def webooks
