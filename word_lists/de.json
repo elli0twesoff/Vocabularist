@@ -125,6 +125,46 @@
     "super!" : {
         "chapter" : 1,
         "word" : "toll!"
-    }
+    },
+
+    "American" : {
+        "chapter" : 1,
+        "article" : "der",
+        "word" : "Amerikaner",
+        "gender" : "masculine singular",
+        "plural" : {
+            "article" : "die",
+            "word" : "Amerikaner" ,
+            "gender" : "plural"
+        }
+
+    },
+
+    "man" : {
+        "chapter" : 1,
+        "article" : "der",
+        "word" : "Mann",
+        "gender" : "singular",
+        "plural" : {
+            "article" : "die",
+            "word" : "Männer" ,
+            "gender" : "plural"
+        }
+
+    },
+
+    "man" : {
+        "chapter" : 1,
+        "article" : "der",
+        "word" : "Mann",
+        "gender" : "singular",
+        "plural" : {
+            "article" : "die",
+            "word" : "Männer" ,
+            "gender" : "plural"
+        }
+
+    },
+
 }
 
