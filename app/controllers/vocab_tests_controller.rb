@@ -7,7 +7,7 @@ class VocabTestsController < ApplicationController
             if chap.to_i > 1
               if current_user && !current_user.activated
                 redirect_to root_path, alert: "You are registered and signed in, but you need to pay before you can use chapters beyond Chapter 1. #{view_context.link_to('Pay here', payment_path)}."
-              else
+              elsif !current_user
                 redirect_to root_path, alert: "Please sign in with an activated account to use chapters beyond Chapter 1. Thank you."
               end
             end
