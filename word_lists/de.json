@@ -1,170 +1,202 @@
 {
-    "old" : {
-        "chapter" : 1,
-        "word" : "alt"
-    },
-
-    "serious" : {
-        "chapter" : 1,
-        "word" : "ernst"
-    },
-
-    "man" : {
-        "chapter" : 1,
-        "article" : "der",
-        "word" : "Mann",
-        "gender" : "singular",
-        "plural" : {
-            "article" : "die",
-            "word" : "Männer" ,
-            "gender" : "plural"
+    "old" : [
+        {
+            "chapter" : 1,
+            "word" : "alt"
         }
+    ],
 
-    },
-
-    "eccentric" : {
-        "chapter" : 1,
-        "word" : "excentrisch"
-    },
-
-    "fantastic" : {
-        "chapter" : 1,
-        "word" : "fantastisch"
-    },
-
-    "hardworking, diligent" : {
-        "chapter" : 1,
-        "word" : "fleißig"
-    },
-
-    "friendly" : {
-        "chapter" : 1,
-        "word" : "freundlich"
-    },
-
-    "unfriendly" : {
-        "chapter" : 1,
-        "word" : "unfreundlich"
-    },
-
-    "tall" : {
-        "chapter" : 1,
-        "word" : "groß"
-    },
-
-    "good, well" : {
-        "chapter" : 1,
-        "word" : "gut"
-    },
-
-    "interesting" : {
-        "chapter" : 1,
-        "word" : "interessant"
-    },
-
-    "complicated" : {
-        "chapter" : 1,
-        "word" : "kompliziert"
-    },
-
-    "conservative" : {
-        "chapter" : 1,
-        "word" : "konservativ"
-    },
-
-    "boring" : {
-        "chapter" : 1,
-        "word" : "langweilig"
-    },
-
-    "nice" : {
-        "chapter" : 1,
-        "word" : "nett"
-    },
-
-    "practical" : {
-        "chapter" : 1,
-        "word" : "praktisch"
-    },
-
-    "impractical" : {
-        "chapter" : 1,
-        "word" : "unpraktisch"
-    },
-
-    "romantic" : {
-        "chapter" : 1,
-        "word" : "romantisch"
-    },
-
-    "quiet" : {
-        "chapter" : 1,
-        "word" : "ruhig"
-    },
-
-    "athletic" : {
-        "chapter" : 1,
-        "word" : "sportlich"
-    },
-
-    "stressful" : {
-        "chapter" : 1,
-        "word" : "stressig"
-    },
-
-    "likable" : {
-        "chapter" : 1,
-        "word" : "sympatisch"
-    },
-
-    "unlikable" : {
-        "chapter" : 1,
-        "word" : "unsympatisch"
-    },
-
-    "super!" : {
-        "chapter" : 1,
-        "word" : "toll!"
-    },
-
-    "American" : {
-        "chapter" : 1,
-        "article" : "der",
-        "word" : "Amerikaner",
-        "gender" : "masculine singular",
-        "plural" : {
-            "article" : "die",
-            "word" : "Amerikaner" ,
-            "gender" : "plural"
+    "serious" : [
+        {
+            "chapter" : 1,
+            "word" : "ernst"
         }
+    ],
 
-    },
-
-    "man" : {
-        "chapter" : 1,
-        "article" : "der",
-        "word" : "Mann",
-        "gender" : "singular",
-        "plural" : {
-            "article" : "die",
-            "word" : "Männer" ,
-            "gender" : "plural"
+    "man" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Mann",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Männer" ,
+                "gender" : "plural"
+            }
         }
+    ],
 
-    },
-
-    "man" : {
-        "chapter" : 1,
-        "article" : "der",
-        "word" : "Mann",
-        "gender" : "singular",
-        "plural" : {
-            "article" : "die",
-            "word" : "Männer" ,
-            "gender" : "plural"
+    "eccentric" : [
+        {
+            "chapter" : 1,
+            "word" : "excentrisch"
         }
+    ],
 
-    },
+    "fantastic" : [
+        {
+            "chapter" : 1,
+            "word" : "fantastisch"
+        }
+    ],
 
+    "hardworking, diligent" : [
+        {
+            "chapter" : 1,
+            "word" : "fleißig"
+        }
+    ],
+
+    "friendly" : [
+        {
+            "chapter" : 1,
+            "word" : "freundlich"
+        }
+    ],
+
+    "unfriendly" : [
+        {
+            "chapter" : 1,
+            "word" : "unfreundlich"
+        }
+    ],
+
+    "tall" : [
+        {
+            "chapter" : 1,
+            "word" : "groß"
+        }
+    ],
+
+    "good, well" : [
+        {
+            "chapter" : 1,
+            "word" : "gut"
+        }
+    ],
+
+    "interesting" : [
+        {
+            "chapter" : 1,
+            "word" : "interessant"
+        }
+    ],
+
+    "complicated" : [
+        {
+            "chapter" : 1,
+            "word" : "kompliziert"
+        }
+    ],
+
+    "conservative" : [
+        {
+            "chapter" : 1,
+            "word" : "konservativ"
+        }
+    ],
+
+    "boring" : [
+        {
+            "chapter" : 1,
+            "word" : "langweilig"
+        }
+    ],
+
+    "nice" : [
+        {
+            "chapter" : 1,
+            "word" : "nett"
+        }
+    ],
+
+    "practical" : [
+        {
+            "chapter" : 1,
+            "word" : "praktisch"
+        }
+    ],
+
+    "impractical" : [
+        {
+            "chapter" : 1,
+            "word" : "unpraktisch"
+        }
+    ],
+
+    "romantic" : [
+        {
+            "chapter" : 1,
+            "word" : "romantisch"
+        }
+    ],
+
+    "quiet" : [
+        {
+            "chapter" : 1,
+            "word" : "ruhig"
+        }
+    ],
+
+    "athletic" : [
+        {
+            "chapter" : 1,
+            "word" : "sportlich"
+        }
+    ],
+
+    "stressful" : [
+        {
+            "chapter" : 1,
+            "word" : "stressig"
+        }
+    ],
+
+    "likable" : [
+        {
+            "chapter" : 1,
+            "word" : "sympatisch"
+        }
+    ],
+
+    "unlikable" : [
+        {
+            "chapter" : 1,
+            "word" : "unsympatisch"
+        }
+    ],
+
+    "super!" : [
+        {
+            "chapter" : 1,
+            "word" : "toll!"
+        }
+    ],
+
+    "American" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Amerikaner",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Amerikaner" ,
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Amerikanerin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Amerikanerinnen" ,
+                "gender" : "feminine plural"
+            }
+        }
+    ]
 }
 

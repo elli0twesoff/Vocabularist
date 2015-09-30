@@ -6,27 +6,34 @@ class GermanWord < ActiveRecord::Base
 
   def self.update_words(words)
     
-    # we're loading them all back into the database anyways, whatevs.
-    GermanWord.destroy_all
+    GermanWord.all.each do |de|
+      # the dependent: :destroy was giving weird errors, so we
+      # have to do this stupid shit.
+      # we're loading them all back into the database anyways, so whatevs.
+      de.plurals.destroy_all
+      de.destroy
+    end
 
     words.keys.each do |word|
-      en = EnglishWord.find_or_create_by(word: word, chapter: words[word]['chapter'])
+      words[word].each do |translation|
+        en = EnglishWord.find_or_create_by(word: word, chapter: translation['chapter'])
 
-      new_deutsch = en.german_words.create(
-            word: words[word]['word'],
-         article: words[word]['article'],
-          gender: words[word]['gender']
-      )
-
-      if words[word]['plural']
-        plural = words[word]['plural']
-        plural_art = plural['article']
-        plural_word = plural['word']
-        new_deutsch.plurals.create(
-           article: plural_art,
-              word: plural_word,
-            gender: 'plural'
+        new_deutsch = en.german_words.create(
+              word: translation['word'],
+           article: translation['article'],
+            gender: translation['gender']
         )
+
+        if translation['plural']
+          plural = translation['plural']
+          
+          new_deutsch.plurals.create(
+                   article: plural['article'],
+                      word: plural['word'],
+                    gender: plural['gender'],
+           english_word_id: en.id
+          )
+        end
       end
     end
   rescue Exception => e
