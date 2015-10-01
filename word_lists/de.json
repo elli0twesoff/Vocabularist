@@ -182,7 +182,7 @@
             "gender" : "masculine singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Amerikaner" ,
+                "word" : "Amerikaner",
                 "gender" : "plural"
             }
         },
@@ -193,10 +193,783 @@
             "gender" : "feminine singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Amerikanerinnen" ,
+                "word" : "Amerikanerinnen",
                 "gender" : "feminine plural"
             }
         }
-    ]
-}
+    ],
 
+    "profession, occupation" : [
+        { 
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Beruf",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Berufe",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "book" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Buch",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Bücher",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "German (language)" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Deutsch",
+            "gender" : "singular"
+        }
+    ],
+
+    "food" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Essen",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Essen",
+                "gender" : "plural"
+            }
+        }
+    ],
+    
+    "bicycle" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Fahrrad",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Fahrräder",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "friend" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Freund",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Freunde" ,
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Freundin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Freundinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "birthplace" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Geburtsort",
+            "gender" : "singular"
+        }
+    ],
+
+    "birthday, date of birthday" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Geburtstag",
+            "gender" : "singular"
+        }
+    ],
+
+    "hobby" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Hobby",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Hobbys" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "university instructor" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Hochschullehrer",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Hochschullehrer",
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Hochschullehrerin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Hochschullehrerinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "interest" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Interesse",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Interessen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+
+    "year" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Jahr",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Jähre",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "journalist" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Journalist",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Journalist",
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Journalistin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Journalistinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "student cafeteria" : [
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Mensa",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Mensas",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "name" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Name",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Namen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "last name" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Nachname",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Nachnamen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "first name" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Vornamen",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Vornamen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "internship" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Praktikum",
+            "gender" : "singular"
+        }
+    ],
+
+    "professor" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Professor",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Professor",
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Professorin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Professorinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "semester" : [
+        {
+            "chapter" : 1,
+            "article" : "das",
+            "word" : "Semester",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Semester",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "fun" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Spaß",
+            "gender" : "singular"
+        }
+    ],
+    
+    "student" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Student",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Studenten",
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Studentin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Studentinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "university" : [
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Universität",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Universitäten",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "place of residence" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Wohnort",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Wohnorten",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "newspaper" : [
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Zeitung",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Zeitungen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "to work" : [
+        {
+            "chapter" : 1,
+            "word" : "arbeiten"
+        }
+    ],
+
+    "to visit" : [
+        {
+            "chapter" : 1,
+            "word" : "besuchen"
+        }
+    ],
+
+    "to stay, remain" : [
+        {
+            "chapter" : 1,
+            "word" : "bleiben"
+        }
+    ],
+
+    "to eat" : [
+        {
+            "chapter" : 1,
+            "word" : "essen"
+        }
+    ],
+
+    "to find" : [
+        {
+            "chapter" : 1,
+            "word" : "finden"
+        }
+    ],
+
+    "to go" : [
+        {
+            "chapter" : 1,
+            "word" : "gehen"
+        }
+    ],
+
+    "to be called, be named" : [
+        {
+            "chapter" : 1,
+            "word" : "heißen"
+        }
+    ],
+
+    "to cook" : [
+        {
+            "chapter" : 1,
+            "word" : "kochen"
+        }
+    ],
+
+    "to come" : [
+        {
+            "chapter" : 1,
+            "word" : "kommen"
+        }
+    ],
+
+    "to learn; study" : [
+        {
+            "chapter" : 1,
+            "word" : "lernen"
+        }
+    ],
+
+    "to read" : [
+        {
+            "chapter" : 1,
+            "word" : "lesen"
+        }
+    ],
+
+    "to do" : [
+        {
+            "chapter" : 1,
+            "word" : "machen"
+        }
+    ],
+
+    "to travel" : [
+        {
+            "chapter" : 1,
+            "word" : "reisen"
+        }
+    ],
+
+    "to say; tell" : [
+        {
+            "chapter" : 1,
+            "word" : "sagen"
+        }
+    ],
+
+    "to send" : [
+        {
+            "chapter" : 1,
+            "word" : "schicken"
+        }
+    ],
+
+    "to be" : [
+        {
+            "chapter" : 1,
+            "word" : "sein"
+        }
+    ],
+
+    "to play" : [
+        {
+            "chapter" : 1,
+            "word" : "spielen"
+        }
+    ],
+
+    "to study" : [
+        {
+            "chapter" : 1,
+            "word" : "studieren"
+        }
+    ],
+
+    "to surf" : [
+        {
+            "chapter" : 1,
+            "word" : "surfen"
+        }
+    ],
+
+    "to dance" : [
+        {
+            "chapter" : 1,
+            "word" : "tanzen"
+        }
+    ],
+
+    "to talk on the phone" : [
+        {
+            "chapter" : 1,
+            "word" : "telefonieren"
+        }
+    ],
+
+    "to hike" : [
+        {
+            "chapter" : 1,
+            "word" : "wandern"
+        }
+    ],
+
+    "to reside, live" : [
+        {
+            "chapter" : 1,
+            "word" : "wohnen"
+        }
+    ],
+
+    "I" : [
+        {
+            "chapter" : 1,
+            "word" : "ich"
+        }
+    ],
+
+    "you (informal sing.)" : [
+        {
+            "chapter" : 1,
+            "word" : "du"
+        }
+    ],
+
+    "he; it" : [ 
+        {
+            "chapter" : 1,
+            "word" : "er"
+        }
+    ],
+
+    "she; it; they" : [
+        {
+            "chapter" : 1,
+            "word" : "sie"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "we" : [
+        {
+            "chapter" : 1,
+            "word" : "wir"
+        }
+    ],
+
+    "you (formal singular)" : [
+        {
+            "chapter" : 1,
+            "word" : "Sie"
+        }
+    ],
+
+    "you (formal plural)" : [
+        {
+            "chapter" : 1,
+            "word" : "sie"
+        }
+    ],
+
+    "when" : [
+        {
+            "chapter" : 1,
+            "word" : "wann"
+        }
+    ],
+
+    "what" : [
+        {
+            "chapter" : 1,
+            "word" : "was"
+        }
+    ],
+
+    "who" : [
+        {
+            "chapter" : 1,
+            "word" : "wer"
+        }
+    ],
+
+    "how" : [
+        {
+            "chapter" : 1,
+            "word" : "wie"
+        }
+    ],
+
+    "where" : [
+        {
+            "chapter" : 1,
+            "word" : "woher"
+        }
+    ],
+
+    "from where" : [
+        {
+            "chapter" : 1,
+            "word" : "woher"
+        }
+    ],
+
+    "but" : [
+        {
+            "chapter" : 1,
+            "word" : "aber"
+        }
+    ],
+
+    "no doubt; definitely" : [
+        {
+            "chapter" : 1,
+            "word" : "bestimmt"
+        }
+    ],
+
+    "thanks a lot" : [
+        {
+            "chapter" : 1,
+            "word" : "danke sehr"
+        }
+    ],
+
+    "really (coll.)" : [
+        {
+            "chapter" : 1,
+            "word" : "echt"
+        }
+    ],
+
+    "quite, very, really" : [
+        {
+            "chapter" : 1,
+            "word" : "ganz"
+        }
+    ],
+
+    "gladly" : [
+        {
+            "chapter" : 1,
+            "word" : "gern"
+        }
+    ],
+
+    "today" : [
+        {
+            "chapter" : 1,
+            "word" : "heute"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 1,
+            "word" : "es"
+        }
+    ]
+
+}
