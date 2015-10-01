@@ -9,8 +9,8 @@ class GermanWord < ActiveRecord::Base
     GermanWord.all.each do |de|
       # the dependent: :destroy was giving weird errors, so we
       # have to do this stupid shit.
-      # we're loading them all back into the database anyways, so whatevs.
-      de.plurals.destroy_all
+      # we're loading them all back into the database anyways, whatevs.
+      de.plurals.each { |p| p.destroy }
       de.destroy
     end
 
