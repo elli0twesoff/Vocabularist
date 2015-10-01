@@ -888,88 +888,80 @@
         }
     ],
 
-    "it" : [
+    "here" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "hier"
         }
     ],
 
-    "it" : [
+    "always" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "immer"
         }
     ],
 
-    "it" : [
+    "now" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "jetzt"
         }
     ],
 
-    "it" : [
+    "of course, naturally" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "natürlich"
         }
     ],
 
-    "it" : [
+    "not" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "nicht"
         }
     ],
 
-    "it" : [
+    "never" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "nie"
         }
     ],
 
-    "it" : [
+    "often" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "oft"
         }
     ],
 
-    "it" : [
+    "very" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "sehr"
         }
     ],
 
-    "it" : [
+    "a lot, much" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "viel"
         }
     ],
 
-    "it" : [
+    "maybe, perhaps" : [
         {
             "chapter" : 1,
-            "word" : "es"
+            "word" : "vielleicht"
         }
     ],
 
-    "it" : [
+    "really" : [
         {
             "chapter" : 1,
-            "word" : "es"
-        }
-    ],
-
-    "it" : [
-        {
-            "chapter" : 1,
-            "word" : "es"
+            "word" : "wirklich"
         }
     ]
-
 }
