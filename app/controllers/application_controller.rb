@@ -6,4 +6,10 @@ class ApplicationController < ActionController::Base
   def authenticated?
     !current_user || !current_user.admin?
   end
+
+  def verify_admin
+    unless current_user && current_user.admin 
+      redirect_to root_path, flash: { alert: "Access denied, bitch." }
+    end
+  end
 end

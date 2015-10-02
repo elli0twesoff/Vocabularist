@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'stripe_log' => 'home#stripe_log'
   get 'german_words/load_from_file', to: 'german_words#load_from_file'
   put 'german_words/update_words', to: 'german_words#update_words'
 	post 'vocab_tests/start', to: 'vocab_tests#start'
