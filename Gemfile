@@ -45,3 +45,4 @@ gem 'rails_12factor', group: :production
 gem 'devise'
 gem 'haml'
 gem 'stripe'
+gem 'awesome_print'
