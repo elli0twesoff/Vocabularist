@@ -963,5 +963,874 @@
             "chapter" : 1,
             "word" : "wirklich"
         }
-    ]
+    ],
+
+
+    "bed" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Bett",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Betten",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "CD player" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "CD-Spieler",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "CD-Spieler",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "DVD Player" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "DVD-Spieler",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "DVD-Spieler",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "TV set" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Fernseher",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "der",
+                "word" : "Fernseher",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "photograph" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Foto",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Fotos",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "cell phone" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Handy",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Handys",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "clothes closet" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Kleiderscrank",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Kleiderschränke",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "dresser" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Kommode",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Kommoden",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "lamp" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Lampe",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Lampen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "furniture (plural)" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Möbel"
+        }
+    ],
+
+    "wastepaper basket" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Papierkorb",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Papierkörbe",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "poster" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Poster",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Poster",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "radio" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Radio",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Radios",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "shelf" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Regal",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Regale",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "bookcase, bookshelf" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Bücherregal",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Bücherregale",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "armchair" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Sessel",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Sessel",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "sofa" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Sofa",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Sofas",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "stereo" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Stereoanlage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Stereoanlagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "stool" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Stuhl",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Stühle",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "telephone" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Telefon",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Telefone",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "rug, carpet" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Teppich",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Teppiche",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "table" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Tisch",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Betten",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "coffee table" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Couchtisch",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Couchtische",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "nightstand" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Nachttisch",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Nachttische",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "desk" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Screibtisch",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Schreibtische",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "clock" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Uhr",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Uhren",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "video recorder, VCR" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Videorekorder",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Videorekorder",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "alarm clock" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Wecker",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Wecker",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "bathroom" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Bad",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Bäder",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "balcony" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Balkon",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Balkone",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "window" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Fenster",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Fenster",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garden" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Garten",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Gärten",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "house" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Haus",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Häuser",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "kitchen" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Küche",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Küchen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "terrace, patio" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Terrasse",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Terrassen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "door" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Tür",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Türen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "wall" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Wand",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Wände",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "room" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Zimmer",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Zimmer",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "workroom, study" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Arbeitszimmer",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Arbeitszimmer",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "bathroom" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Badezimmer",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Badezimmer",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "dining room" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Esszimmer",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Esszimmer",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "bedroom" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Schlafzimmer",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Schlafzimmer",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "living room" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Wohnzimmer",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Wohnzimmer",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "car" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Auto",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Autos",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "euro" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Euro",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Euros",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "money" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Geld",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Geld",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "department store" : [
+        {
+            "chapter" : 2,
+            "article" : "das",
+            "word" : "Kaufhaus",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Kaufhäuser",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "customer" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Kunde",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Kunden",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "people" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Leute"
+        }
+    ],
+
+    "person, human being" : [
+        {
+            "chapter" : 2,
+            "article" : "der",
+            "word" : "Mensch",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Menschen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "rent" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Miete",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Mieten",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "roommate, housemate" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Mitbewohner",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Mitbewohner",
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Mitbewohnerin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "MItbewohnerinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "garage" : [
+        {
+            "chapter" : 2,
+            "article" : "die",
+            "word" : "Garage",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Garagen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
 }
