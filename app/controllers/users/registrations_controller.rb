@@ -19,6 +19,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
         #set_flash_message :notice, :signed_up if is_flashing_format?
         sign_up(resource_name, resource)
         #respond_with resource, location: after_sign_up_path_for(resource)
+
+        # THIS IS ONLY UNTIL THE END OF FALL 2015 SEMESTER, DON'T GET USED TO IT!
+        resource.activated = true
+        resource.save
+
         flash[:notice] = "You have registered successfully. Complete this payment page and you'll be good to go. Thank you!"
         respond_with resource, location: payment_path
       else
