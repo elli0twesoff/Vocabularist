@@ -1701,136 +1701,529 @@
             "gender" : "feminine singular",
             "plural" : {
                 "article" : "die",
-                "word" : "MItbewohnerinnen",
+                "word" : "Mitbewohnerinnen",
                 "gender" : "feminine plural"
             }
         }
     ],
 
-    "garage" : [
+    "motorcycle" : [
         {
             "chapter" : 2,
-            "article" : "die",
-            "word" : "Garage",
+            "article" : "das",
+            "word" : "Motorrad",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Motorr",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "nonsmoker" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Nichtraucher",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Nichtraucher",
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Nichtraucherin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Nichtraucherinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "problem" : [
         {
             "chapter" : 2,
-            "article" : "die",
-            "word" : "Garage",
+            "article" : "das",
+            "word" : "Problem",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Probleme",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "dormitory" : [
         {
             "chapter" : 2,
-            "article" : "die",
-            "word" : "Garage",
+            "article" : "das",
+            "word" : "Studentenwohnheim",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Studentenwohnheime",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "day" : [
         {
             "chapter" : 2,
-            "article" : "die",
-            "word" : "Garage",
+            "article" : "der",
+            "word" : "Tag",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Tage",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "salesperson" : [
+        {
+            "chapter" : 1,
+            "article" : "der",
+            "word" : "Verkäufer",
+            "gender" : "masculine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Verkäufer",
+                "gender" : "plural"
+            }
+        },
+        {
+            "chapter" : 1,
+            "article" : "die",
+            "word" : "Verkäuferin",
+            "gender" : "feminine singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Verkäuferinnen",
+                "gender" : "feminine plural"
+            }
+        }
+    ],
+
+    "video(tape)" : [
         {
             "chapter" : 2,
-            "article" : "die",
-            "word" : "Garage",
+            "article" : "das",
+            "word" : "Video",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Videos",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "shared housing" : [
         {
             "chapter" : 2,
             "article" : "die",
-            "word" : "Garage",
+            "word" : "Wohngemeinschaft",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Wohngemeinschaften",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "time" : [
         {
             "chapter" : 2,
             "article" : "die",
-            "word" : "Garage",
+            "word" : "Zeit",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Zeiten",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "apartment" : [
         {
             "chapter" : 2,
             "article" : "die",
-            "word" : "Garage",
+            "word" : "Wohnung",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Wohnungen",
                 "gender" : "plural"
             }
         }
     ],
 
-    "garage" : [
+    "houseplant" : [
         {
             "chapter" : 2,
             "article" : "die",
-            "word" : "Garage",
+            "word" : "Zimmerpflanze",
             "gender" : "singular",
             "plural" : {
                 "article" : "die",
-                "word" : "Garagen",
+                "word" : "Zimmerpflanze",
                 "gender" : "plural"
             }
         }
     ],
+
+    "to need" : [
+        {
+            "chapter" : 2,
+            "word" : "brauchen"
+        }
+    ],
+
+    "to eat" : [
+        {
+            "chapter" : 2,
+            "word" : "essen"
+        }
+    ],
+
+    "to drive, ride" : [
+        {
+            "chapter" : 2,
+            "word" : "fahren"
+        }
+    ],
+
+    "to ask" : [
+        {
+            "chapter" : 2,
+            "word" : "fragen"
+        }
+    ],
+
+    "to have" : [
+        {
+            "chapter" : 2,
+            "word" : "haben"
+        }
+    ],
+
+    "to buy" : [
+        {
+            "chapter" : 2,
+            "word" : "kaufen"
+        }
+    ],
+
+    "to cost" : [
+        {
+            "chapter" : 2,
+            "word" : "kosten"
+        }
+    ],
+
+    "to run, job" : [
+        {
+            "chapter" : 2,
+            "word" : "laufen"
+        }
+    ],
+
+    "to read" : [
+        {
+            "chapter" : 2,
+            "word" : "lesen"
+        }
+    ],
+
+    "to sleep" : [
+        {
+            "chapter" : 2,
+            "word" : "schlafen"
+        }
+    ],
+
+    "to write" : [
+        {
+            "chapter" : 2,
+            "word" : "schreiben"
+        }
+    ],
+
+    "to swim" : [
+        {
+            "chapter" : 2,
+            "word" : "schwimmen"
+        }
+    ],
+
+    "to see" : [
+        {
+            "chapter" : 2,
+            "word" : "sehen"
+        }
+    ],
+
+    "to speak" : [
+        {
+            "chapter" : 2,
+            "word" : "sprechen"
+        }
+    ],
+
+    "to look for" : [
+        {
+            "chapter" : 2,
+            "word" : "suchen"
+        }
+    ],
+
+    "to drink" : [
+        {
+            "chapter" : 2,
+            "word" : "trinken"
+        }
+    ],
+
+    "all" : [
+        {
+            "chapter" : 2,
+            "word" : "alle"
+        }
+    ],
+
+    "comfortable, comfortably" : [
+        {
+            "chapter" : 2,
+            "word" : "bequem"
+        }
+    ],
+
+    "inexpensive(ly), cheap(ly)" : [
+        {
+            "chapter" : 2,
+            "word" : "billig"
+        }
+    ],
+
+    "there" : [
+        {
+            "chapter" : 2,
+            "word" : "da"
+        }
+    ],
+
+    "desperate(ly)" : [
+        {
+            "chapter" : 2,
+            "word" : "dringend"
+        }
+    ],
+
+    "dark" : [
+        {
+            "chapter" : 2,
+            "word" : "dunkel"
+        }
+    ],
+
+    "free(ly)" : [
+        {
+            "chapter" : 2,
+            "word" : "frei"
+        }
+    ],
+
+    "just, exactly" : [
+        {
+            "chapter" : 2,
+            "word" : "gerade"
+        }
+    ],
+
+    "big, large" : [
+        {
+            "chapter" : 2,
+            "word" : "groß"
+        }
+    ],
+
+    "ugly" : [
+        {
+            "chapter" : 2,
+            "word" : "hässlich"
+        }
+    ],
+
+    "bright(ly), light" : [
+        {
+            "chapter" : 2,
+            "word" : "hell"
+        }
+    ],
+
+    "small" : [
+        {
+            "chapter" : 2,
+            "word" : "klein"
+        }
+    ],
+
+    "furnished" : [
+        {
+            "chapter" : 2,
+            "word" : "möbliert"
+        }
+    ],
+
+    "unfurnished" : [
+        {
+            "chapter" : 2,
+            "word" : "unmöbliert"
+        }
+    ],
+
+    "low" : [
+        {
+            "chapter" : 2,
+            "word" : "niedrig"
+        }
+    ],
+
+    "still; yet" : [
+        {
+            "chapter" : 2,
+            "word" : "noch"
+        }
+    ],
+
+    "only" : [
+        {
+            "chapter" : 2,
+            "word" : "nur"
+        }
+    ],
+
+    "a bargain, inexpensive(ly)" : [
+        {
+            "chapter" : 2,
+            "word" : "preiswert"
+        }
+    ],
+
+    "quite, rather" : [
+        {
+            "chapter" : 2,
+            "word" : "recht"
+        }
+    ],
+
+    "already" : [
+        {
+            "chapter" : 2,
+            "word" : "schon"
+        }
+    ],
+
+    "nice(ly), beautiful(ly)" : [
+        {
+            "chapter" : 2,
+            "word" : "schön"
+        }
+    ],
+
+    "rare(ly)" : [
+        {
+            "chapter" : 2,
+            "word" : "selten"
+        }
+    ],
+
+    "so" : [
+        {
+            "chapter" : 2,
+            "word" : "so"
+        }
+    ],
+
+    "expensive(ly)" : [
+        {
+            "chapter" : 2,
+            "word" : "teuer"
+        }
+    ],
+
+    "much/many" : [
+        {
+            "chapter" : 2,
+            "word" : "viel/viele"
+        }
+    ],
+
+    "again" : [
+        {
+            "chapter" : 2,
+            "word" : "wieder"
+        }
+    ],
+
+    "this" : [
+        {
+            "chapter" : 2,
+            "word" : "dieser"
+        }
+    ],
+
+    "something; somewhat, a little" : [
+        {
+            "chapter" : 2,
+            "word" : "etwas"
+        }
+    ],
+
+    "no, none, not any" : [
+        {
+            "chapter" : 2,
+            "word" : "kein"
+        }
+    ],
+
+    "nothing" : [
+        {
+            "chapter" : 2,
+            "word" : "nichts"
+        }
+    ],
+
+    "why" : [
+        {
+            "chapter" : 2,
+            "word" : "warum"
+        }
+    ],
+
+    "which" : [
+        {
+            "chapter" : 2,
+            "word" : "welcher"
+        }
+    ],
+
+    "centrally located" : [
+        {
+            "chapter" : 2,
+            "word" : "zentral gelegen"
+        }
+    ]
 
 }
