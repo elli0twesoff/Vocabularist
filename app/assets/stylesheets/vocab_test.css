@@ -9,7 +9,7 @@ th {
 }
 
 .center {
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: auto;
 }
@@ -47,11 +47,11 @@ th {
 .umlaut, .weirdos {
     float: left;
     padding: 7px;
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 .weirdos {
-    padding-right: 40%;
+    padding-right: 35%;
 }
 
 .deselected {

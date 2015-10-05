@@ -29,10 +29,11 @@ function checkAnswer(entry) {
 function verifyAnswer(entry) {
     var words = entry.split(' ');
 
-    if (words.length > 1) {
+    if (answer['article'] != null) {
         var art = words[0];
         var word = words[1];
         
+        console.log(words);
         return (art.toLowerCase() == answer['article'].toLowerCase() && 
                 word.toLowerCase() == answer['word'].toLowerCase()) ? true : false;
 
