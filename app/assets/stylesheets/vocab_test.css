@@ -1,11 +1,11 @@
 td {
-	vertical-align: top;
+	/*vertical-align: top;*/
 }
 
 th {
     padding-top: 10px;
 	text-align: center;
-	width: 150px;
+	/*width: 100%;*/
 }
 
 .center {
@@ -30,6 +30,18 @@ th {
 
 #word_form {
     float: left;
+    width: 100%;
+}
+
+#word_form input {
+    height: 30px;
+    width: 100%;
+    font-size: 18pt;
+}
+
+#english {
+    font-size: 18pt;
+    width: 100%;
 }
 
 .umlaut, .weirdos {
@@ -57,12 +69,16 @@ th {
 }
 
 .table-area {
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
 .table-area table {
     width: 100%;
+}
+
+.table-area table td {
+    width: 50%;
 }
 
 .question-count {
