@@ -11,41 +11,37 @@ function getRandomArbitrary(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
 
-function checkAnswer(userArt, userWord) {
-    if (checkArticle(userArt) && checkWord(userWord)) {
+function checkAnswer(entry) {
+    //if (checkArticle(userArt) && checkWord(userWord)) {
+    
+    if (verifyAnswer(entry)) {
         correct.push({ article: answer['article'], word: answer['word'] });
         showCorrect();
         score++;
     } else {
-        incorrect.push({ userArt: userArt, userWord: userWord, correctArt: answer['article'], correctWord: answer['word'] });
+        incorrect.push({ userWord: entry, correctArt: answer['article'], correctWord: answer['word'] });
         showIncorrect();
     }
 
     setTimeout(function() { clearAnswer() }, 5000);
 }
 
-function checkArticle(art) {
-    var ans;
+function verifyAnswer(entry) {
+    var words = entry.split(' ');
 
-    if (answer['article'] == null) {
-        ans = true;
+    if (words.length > 1) {
+        var art = words[0];
+        var word = words[1];
+        
+        return (art.toLowerCase() == answer['article'].toLowerCase() && 
+                word.toLowerCase() == answer['word'].toLowerCase()) ? true : false;
+
     } else {
-        ans = art.toLowerCase() == answer['article'].toLowerCase() ? true : false;
+        var word = words[0];
+
+        return word.toLowerCase() == answer['word'].toLowerCase() ? true : false;
+
     }
-
-    return ans;
-}
-
-function checkWord(word) {
-    var ans;
-
-    if (word.toLowerCase() == answer['word'].toLowerCase()) {
-        ans = true;
-    } else {
-       ans = false;
-    }
-
-    return ans;
 }
 
 function showCorrect() {
@@ -83,7 +79,6 @@ function generateNextWord() {
         var pluralArt = plural['article'];
         wordSelector = getRandomArbitrary(0, 1);
     }
-    console.log(germanArt);
 
     if (germanArt == null) {
         $('#article_form').hide();
@@ -114,23 +109,23 @@ function generateNextWord() {
 }
 
 function nextQuestion() {
-    var userArt = $('#german_article').val();
-    var userWord = $('#german_word').val();
+    //var userArt = $('#german_article').val();
+    var entry = $('#german_word').val();
 
-    if (userWord.length > 0) {
+    if (entry.length > 0) {
         // check to see if what the user entered was correct!
-        checkAnswer(userArt, userWord);
+        checkAnswer(entry);
 
         if (remainingWords.length > 0) {
             generateNextWord();
-            $('#german_article').val('');
+            //$('#german_article').val('');
             $('#german_word').val('');
 
-            if (answer['article'] != null) {
-                $('#german_article')[0].focus();
-            } else {
-                $('#german_word')[0].focus();
-            }
+            //if (answer['article'] != null) {
+                //$('#german_article')[0].focus();
+            //} else {
+                //$('#german_word')[0].focus();
+            //}
         } else {
             var percentage = Math.round((score / wordCount) * 100) + "%";
             alert("you're done!  you got " + score + " out of " + wordCount + " (" + percentage +"), correct.");
@@ -173,3 +168,28 @@ $(document).ready(function() {
         $('#german_word')[0].focus();
     });
 });
+
+//function checkArticle(art) {
+    //var ans;
+
+    //if (answer['article'] == null) {
+        //ans = true;
+    //} else {
+        //ans = art.toLowerCase() == answer['article'].toLowerCase() ? true : false;
+    //}
+
+    //return ans;
+//}
+
+//function checkWord(word) {
+    //var ans;
+
+    //if (word.toLowerCase() == answer['word'].toLowerCase()) {
+        //ans = true;
+    //} else {
+       //ans = false;
+    //}
+
+    //return ans;
+//}
+
