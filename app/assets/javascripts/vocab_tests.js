@@ -33,7 +33,6 @@ function verifyAnswer(entry) {
         var art = words[0];
         var word = words[1];
         
-        console.log(words);
         return (art.toLowerCase() == answer['article'].toLowerCase() && 
                 word.toLowerCase() == answer['word'].toLowerCase()) ? true : false;
 
