@@ -2224,6 +2224,682 @@
             "chapter" : 2,
             "word" : "zentral gelegen"
         }
+    ],
+
+    "brother" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Bruder",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Brüder" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "parents (plural)" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Eltern",
+            "gender" : "plural"
+        }
+    ],
+
+    "grandson" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Enkel",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Enkel" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "granddaughter" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Enkelin",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Enkelinnen" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "family" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Mann",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Familien" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "wife" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Frau",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Frauen" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "siblings (plural)" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Geschwister",
+            "gender" : "singular"
+        }
+    ],
+
+    "grandparents (plural)" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Großeltern",
+            "gender" : "singular"
+        }
+    ],
+
+    "grandmother" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Großmutter",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Großmütter" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "grandfather" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Großvater",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Großväter" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "(female) cousin" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Kusine",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Kusinen" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "husband" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Mann",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Männer" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "mother" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Mutter",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Mütter" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "nephew" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Neffe",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Neffen" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "niece" : [
+        {
+            "chapter" : 3,
+            "article" : "Nichte",
+            "word" : "Mann",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Nichten" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "grandma" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Oma",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Omas" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "uncle" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Onkel",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Onkel" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "grandpa" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Opa",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Opas" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "brother-in-law" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Schwager",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Schwäger" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "sister-in-law" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Schwägerin",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Schwägerinnen" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "sister" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Schwester",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Schwestern" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "son" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Sonn",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Sönne" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "aunt" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Tante",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Tanten" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "daughter" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word" : "Tochter",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Töchter" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "father" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Vater",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Väter" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "(male) cousin" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Vetter",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Vettern" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "(the) Monday" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Montag",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) Tuesday" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Dienstag",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) Wednesday" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Mittwoch",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) Thursday" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Donnerstag",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) Friday" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Freitag",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) Saturday" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Samstag",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) Sunday" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Sonntag",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) January" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Januar",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) February" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Februar",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) March" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "März",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) April" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "April",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) May" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Mai",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) June" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Juni",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) July" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Juli",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) August" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "August",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) September" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Sonntag",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) October" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Oktober",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) November" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "November",
+            "gender" : "singular"
+        }
+    ],
+
+    "(the) December" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word" : "Dezember",
+            "gender" : "singular"
+        }
+    ],
+
+    "family gathering" : [
+        {
+            "chapter" : 3,
+            "article" : "das",
+            "word"    : "Familienfest",
+            "gender"  : "singular",
+            "plural"  : {
+                "article" : "die",
+                "word"    : "Familienfeste",
+                "gender"  : "plural"
+            }
+        }
+    ],
+
+    "(the) Mardi Gras (southern Germany, Austria)" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word"    : "Fasching",
+            "gender"  : "singular"
+        }
+    ],
+
+    "gift, present" : [
+        {
+            "chapter" : 3,
+            "article" : "das",
+            "word"    : "Geschenk",
+            "gender"  : "singular",
+            "plural"  : {
+                "article" : "die",
+                "word"    : "Geschenke",
+                "gender"  : "plural"
+            }
+        }
+    ],
+
+    "Christmas Eve" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word"    : "Heilige Abend",
+            "gender"  : "singular"
+        }
+    ],
+
+    "calendar" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word"    : "Kalender",
+            "gender"  : "singular",
+            "plural"  : {
+                "article" : "die",
+                "word"    : "Kalender",
+                "gender"  : "plural"
+            }
+        }
+    ],
+
+    "(the) Mardi Gras (Rhineland)" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word"    : "Karneval",
+            "gender"  : "singular"
+        }
+    ],
+
+    "Mother's Day" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word"    : "Muttertag",
+            "gender"  : "singular"
+        }
+    ],
+
+    "New Year's Day" : [
+        {
+            "chapter" : 3,
+            "article" : "das",
+            "word"    : "Silvester",
+            "gender"  : "singular"
+        }
+    ],
+
+    "Easter" : [
+        {
+            "chapter" : 3,
+            "article" : "das",
+            "word"    : "Ostern",
+            "gender"  : "singular"
+        }
+    ],
+
+    "Valentine's Day" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word"    : "Valentinstag",
+            "gender"  : "singular"
+        }
+    ],
+
+    "Christmas" : [
+        {
+            "chapter" : 3,
+            "article" : "das",
+            "word"    : "Weihnachten",
+            "gender"  : "singular"
+        }
+    ],
+
+    "party" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word"    : "Party",
+            "gender"  : "singular",
+            "plural"  : {
+                "article" : "die",
+                "word"    : "Partys",
+                "gender"  : "plural"
+            }
+        }
+    ],
+
+    "tradition" : [
+        {
+            "chapter" : 3,
+            "article" : "die",
+            "word"    : "Tradition",
+            "gender"  : "singular",
+            "plural"  : {
+                "article" : "die",
+                "word"    : "Traditionen",
+                "gender"  : "plural"
+            }
+        }
+    ],
+
+    "Christmas tree" : [
+        {
+            "chapter" : 3,
+            "article" : "der",
+            "word"    : "Weihnachtsbaum",
+            "gender"  : "singular",
+            "plural"  : {
+                "article" : "die",
+                "word"    : "Weihnactsbäume",
+                "gender"  : "plural"
+            }
+        }
     ]
 
 }
