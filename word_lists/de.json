@@ -2900,6 +2900,363 @@
                 "gender"  : "plural"
             }
         }
+    ],
+
+    "to celebrate" : [
+        {
+            "chapter" : 3,
+            "word" : "feiern"
+        }
+    ],
+
+    "to give" : [
+        {
+            "chapter" : 3,
+            "word" : "geben"
+        }
+    ],
+
+    "to congratulate" : [
+        {
+            "chapter" : 3,
+            "word" : "gratulieren"
+        }
+    ],
+
+    "to marry" : [
+        {
+            "chapter" : 3,
+            "word" : "heiraten"
+        }
+    ],
+
+    "to know (be acquainted with a person or thing)" : [
+        {
+            "chapter" : 3,
+            "word" : "kennen"
+        }
+    ],
+
+    "to plan" : [
+        {
+            "chapter" : 3,
+            "word" : "planen"
+        }
+    ],
+
+    "to become, be" : [
+        {
+            "chapter" : 3,
+            "word" : "werden"
+        }
+    ],
+
+    "to know (something as a fact)" : [
+        {
+            "chapter" : 3,
+            "word" : "wissen"
+        }
+    ],
+
+    "to wish" : [
+        {
+            "chapter" : 3,
+            "word" : "wünschen"
+        }
+    ],
+
+    "unfortunately" : [
+        {
+            "chapter" : 3,
+            "word" : "leider"
+        }
+    ],
+
+    "tomorrow" : [
+        {
+            "chapter" : 3,
+            "word" : "morgen"
+        }
+    ],
+
+    "namely, that is to say" : [
+        {
+            "chapter" : 3,
+            "word" : "nämlich"
+        }
+    ],
+
+    "new" : [
+        {
+            "chapter" : 3,
+            "word" : "neu"
+        }
+    ],
+
+    "verwandt mit" : [
+        {
+            "chapter" : 3,
+            "word" : "related to"
+        }
+    ],
+
+    "important" : [
+        {
+            "chapter" : 3,
+            "word" : "wichtig"
+        }
+    ],
+
+    "first" : [
+        {
+            "chapter" : 3,
+            "word" : "erste"
+        }
+    ],
+
+    "second" : [
+        {
+            "chapter" : 3,
+            "word" : "zweite"
+        }
+    ],
+
+    "third" : [
+        {
+            "chapter" : 3,
+            "word" : "dritte"
+        }
+    ],
+
+    "fourth" : [
+        {
+            "chapter" : 3,
+            "word" : "vierte"
+        }
+    ],
+
+    "fifth" : [
+        {
+            "chapter" : 3,
+            "word" : "fünfte"
+        }
+    ],
+
+    "sixth" : [
+        {
+            "chapter" : 3,
+            "word" : "sechste"
+        }
+    ],
+
+    "seventh" : [
+        {
+            "chapter" : 3,
+            "word" : "siebte"
+        }
+    ],
+
+    "eighth" : [
+        {
+            "chapter" : 3,
+            "word" : "achte"
+        }
+    ],
+
+    "ninth" : [
+        {
+            "chapter" : 3,
+            "word" : "neunte"
+        }
+    ],
+
+    "tenth" : [
+        {
+            "chapter" : 3,
+            "word" : "zehnte"
+        }
+    ],
+
+    "eleventh" : [
+        {
+            "chapter" : 3,
+            "word" : "elfte"
+        }
+    ],
+
+    "twelfth" : [
+        {
+            "chapter" : 3,
+            "word" : "zwölfte"
+        }
+    ],
+
+    "thirteenth" : [
+        {
+            "chapter" : 3,
+            "word" : "dreizehnte"
+        }
+    ],
+
+    "twentieth" : [
+        {
+            "chapter" : 3,
+            "word" : "zwanzigste"
+        }
+    ],
+
+    "my" : [
+        {
+            "chapter" : 3,
+            "word" : "mein"
+        }
+    ],
+
+    "your (informal sg.)" : [
+        {
+            "chapter" : 3,
+            "word" : "dein"
+        }
+    ],
+
+    "his; its" : [
+        {
+            "chapter" : 3,
+            "word" : "sein"
+        }
+    ],
+
+    "her; its; their" : [
+        {
+            "chapter" : 3,
+            "word" : "ihr"
+        }
+    ],
+
+    "our" : [
+        {
+            "chapter" : 3,
+            "word" : "unser"
+        }
+    ],
+
+    "your (informal pl.)" : [
+        {
+            "chapter" : 3,
+            "word" : "euer"
+        }
+    ],
+
+    "your (formal)" : [
+        {
+            "chapter" : 3,
+            "word" : "ihr"
+        }
+    ],
+
+    "through" : [
+        {
+            "chapter" : 3,
+            "word" : "durch"
+        }
+    ],
+
+    "for" : [
+        {
+            "chapter" : 3,
+            "word" : "für"
+        }
+    ],
+
+    "against, around (+ time)" : [
+        {
+            "chapter" : 3,
+            "word" : "gegen"
+        }
+    ],
+
+    "without" : [
+        {
+            "chapter" : 3,
+            "word" : "ohne"
+        }
+    ],
+
+    "at (+ time)" : [
+        {
+            "chapter" : 3,
+            "word" : "um"
+        }
+    ],
+
+    "around (spatial)" : [
+        {
+            "chapter" : 3,
+            "word" : "um"
+        }
+    ],
+
+    "me" : [
+        {
+            "chapter" : 3,
+            "word" : "mich"
+        }
+    ],
+
+    "you (informal sg.)" : [
+        {
+            "chapter" : 3,
+            "word" : "dich"
+        }
+    ],
+
+    "him; it" : [
+        {
+            "chapter" : 3,
+            "word" : "ihn"
+        }
+    ],
+
+    "her; it; them" : [
+        {
+            "chapter" : 3,
+            "word" : "sie"
+        }
+    ],
+
+    "it" : [
+        {
+            "chapter" : 3,
+            "word" : "es"
+        }
+    ],
+
+    "us" : [
+        {
+            "chapter" : 3,
+            "word" : "uns"
+        }
+    ],
+
+    "you (informal pl.)" : [
+        {
+            "chapter" : 3,
+            "word" : "euch"
+        }
+    ],
+
+    "you (formal)" : [
+        {
+            "chapter" : 3,
+            "word" : "Sie"
+        }
+    ],
+
+    "there is, there are" : [
+        {
+            "chapter" : 3,
+            "word" : "es gibt"
+        }
     ]
 
 }
