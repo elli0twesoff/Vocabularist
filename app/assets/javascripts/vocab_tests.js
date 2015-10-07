@@ -120,15 +120,27 @@ function nextQuestion() {
             var percentage = Math.round((score / wordCount) * 100) + "%";
             alert("you're done!  you got " + score + " out of " + wordCount + " (" + percentage +"), correct.");
 
-            // TODO: rather than redirecting home, either redirect them to a results page,
-            // or just show the results on the same page.
-            window.location = '/';
+            showResults();
         }
 
     } else {
         alert("at least try to guess or something...");
     }
 
+}
+
+function showResults() {
+    var tbody = '';
+
+    for (var i in incorrect) {
+        var article = incorrect[i]['correctArt'] ? incorrect[i]['correctArt'] + ' ' : '';
+
+        tbody += '<tr><td>' + incorrect[i]['userWord'] + '</td>' +
+            '<td>' + article + incorrect[i]['correctWord'] + '</td></tr>';
+    }
+
+    $('#results tbody').append(tbody);
+    $('#results').show();
 }
 
 $(document).ready(function() {
