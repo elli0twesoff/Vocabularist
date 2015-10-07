@@ -28,19 +28,17 @@ function checkAnswer(entry) {
 }
 
 function verifyAnswer(entry) {
-    var words = entry.split(' ');
 
     if (answer['article'] != null) {
-        var art = words[0];
-        var word = words[1];
+        var words = entry.split(' ');
+        var art = words.shift();
+        var word = words.join(' ');
         
         return (art.toLowerCase() == answer['article'].toLowerCase() && 
                 word.toLowerCase() == answer['word'].toLowerCase()) ? true : false;
 
     } else {
-        var word = words[0];
-
-        return word.toLowerCase() == answer['word'].toLowerCase() ? true : false;
+        return entry.toLowerCase() == answer['word'].toLowerCase() ? true : false;
     }
 }
 
