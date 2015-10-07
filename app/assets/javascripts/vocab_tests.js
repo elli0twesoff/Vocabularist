@@ -5,6 +5,7 @@ var wordCount;
 var correct = [];
 var incorrect = [];
 var wait = false;
+var timeoutHandle;
 
 
 function getRandomArbitrary(min, max) {
@@ -12,7 +13,6 @@ function getRandomArbitrary(min, max) {
 }
 
 function checkAnswer(entry) {
-    //if (checkArticle(userArt) && checkWord(userWord)) {
     
     if (verifyAnswer(entry)) {
         correct.push({ article: answer['article'], word: answer['word'] });
@@ -23,7 +23,8 @@ function checkAnswer(entry) {
         showIncorrect();
     }
 
-    setTimeout(function() { clearAnswer() }, 5000);
+    window.clearTimeout(timeoutHandle);
+    timeoutHandle = window.setTimeout(function() { clearAnswer() }, 5000);
 }
 
 function verifyAnswer(entry) {
@@ -40,7 +41,6 @@ function verifyAnswer(entry) {
         var word = words[0];
 
         return word.toLowerCase() == answer['word'].toLowerCase() ? true : false;
-
     }
 }
 
@@ -109,7 +109,6 @@ function generateNextWord() {
 }
 
 function nextQuestion() {
-    //var userArt = $('#german_article').val();
     var entry = $('#german_word').val();
 
     if (entry.length > 0) {
@@ -118,14 +117,7 @@ function nextQuestion() {
 
         if (remainingWords.length > 0) {
             generateNextWord();
-            //$('#german_article').val('');
             $('#german_word').val('');
-
-            //if (answer['article'] != null) {
-                //$('#german_article')[0].focus();
-            //} else {
-                //$('#german_word')[0].focus();
-            //}
         } else {
             var percentage = Math.round((score / wordCount) * 100) + "%";
             alert("you're done!  you got " + score + " out of " + wordCount + " (" + percentage +"), correct.");
@@ -167,29 +159,6 @@ $(document).ready(function() {
         $('#german_word').val(input + letter);
         $('#german_word')[0].focus();
     });
+
 });
-
-//function checkArticle(art) {
-    //var ans;
-
-    //if (answer['article'] == null) {
-        //ans = true;
-    //} else {
-        //ans = art.toLowerCase() == answer['article'].toLowerCase() ? true : false;
-    //}
-
-    //return ans;
-//}
-
-//function checkWord(word) {
-    //var ans;
-
-    //if (word.toLowerCase() == answer['word'].toLowerCase()) {
-        //ans = true;
-    //} else {
-       //ans = false;
-    //}
-
-    //return ans;
-//}
 
