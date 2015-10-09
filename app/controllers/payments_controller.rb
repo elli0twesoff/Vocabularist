@@ -41,7 +41,7 @@ class PaymentsController < ApplicationController
       status:     "success"
     )
 
-    # TODO: email a receipt to the user.
+    VocabularistMailer.signup_receipt(current_user).deliver!
 
     redirect_to root_path, notice: "Your payment has been recieved, and you are now free to use the rest of the site.  Thank you!"
 
@@ -97,7 +97,13 @@ class PaymentsController < ApplicationController
     # Something else happened, completely unrelated to Stripe
   end
 
+  def signup_email
+    VocabularistMailer.signup_receipt(current_user).deliver!
+    redirect_to :back, flash: { notice: 'test email sent.' }
+  end
+
   private
+
   def set_payment
     @payment = Payment.find(params[:id])
   end

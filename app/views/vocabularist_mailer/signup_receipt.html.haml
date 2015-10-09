@@ -1,0 +1,19 @@
+.container{ style: "width: 50%; margin: auto; text-align: center; border: 1px solid blue; font-family: Courier" }
+  .center{ style: "padding: 20px; text-align: center;" }
+    %h3
+      = "#{@user.email},"
+
+    %p
+      thank you for signing up with Vocabularist.  i hope this app helps you as much as this helps me.
+
+    %h4
+      %u
+        this is your receipt.
+
+    %p
+      Paid: $5.00
+    %p
+      = "on #{Time.now.strftime('%A %B %-d, %Y - %l:%M:%S%P')}"
+
+    %p
+      = link_to 'go to the site.', "https://vocabularist.herokuapp.com", target: "_blank"

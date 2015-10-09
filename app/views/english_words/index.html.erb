@@ -1,8 +1,11 @@
 <%= link_to 'add word', new_english_word_path %><br />
 <%= link_to 'load from file', german_words_load_from_file_path %><br />
+<%= link_to 'send test email', test_email_path, method: :post %><br />
 
 
-<h2>word list (english to german)</h2>
+<div class='center'>
+  <h2>word list (english to german)</h2>
+</div>
 
 <table class='word-list'>
   <thead>
