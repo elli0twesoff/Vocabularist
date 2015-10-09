@@ -43,7 +43,7 @@ class PaymentsController < ApplicationController
 
     VocabularistMailer.signup_receipt(current_user).deliver!
 
-    redirect_to root_path, notice: "Your payment has been recieved, and you are now free to use the rest of the site.  Thank you!"
+    redirect_to root_path, notice: "Your payment has been recieved and a receipt has been sent to your email. You're now free to use the rest of the site. Thank you!"
 
   rescue Stripe::CardError => e
     puts "Stripe card error: #{e.message}"
