@@ -6,7 +6,7 @@
   </p>
 
   <p>
-  after signing up you will be sent to the payment page. i do not record any of your credit card or billing information (the source code to this application is publicly available, please see the github link on the homepage).
+  after signing up you will be sent to the payment page. i do not record any of your credit card or billing information (the source code to this application is available for you to read. if you want to check it out, follow this link <%= link_to 'here', 'https://github.com/elliotwesoff/Vocabularist', target: '_blank' %>.
   </p>
 
   <p>
@@ -20,6 +20,16 @@
     <div class="field">
       <%= f.label :email, "email" %><br />
       <%= f.email_field :email, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :first_name, "first name" %><br />
+      <%= f.text_field :first_name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :last_name, "last name" %><br />
+      <%= f.text_field :last_name %>
     </div>
 
     <div class="field">
