@@ -1,5 +1,6 @@
 class VocabTestsController < ApplicationController
   def start
+    # hehe oops...
     if params[:chapters]
       if params[:commit] == 'start'
         if authenticated?
