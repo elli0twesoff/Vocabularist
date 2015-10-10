@@ -3502,7 +3502,6 @@
     "without" : [
         {
             "book" : "deutsch-naklar-6e",
-            "book" : "deutsch-naklar-6e",
             "chapter" : 3,
             "word" : "ohne"
         }
@@ -3594,6 +3593,808 @@
             "chapter" : 3,
             "word" : "es gibt"
         }
-    ]
+    ],
 
+    "morning" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Morning",
+            "gender" : "singular"
+        }
+    ],
+
+    "morning, before noon" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Vormittag",
+            "gender" : "singular"
+        }
+    ],
+
+    "noon" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Mittag",
+            "gender" : "singular"
+        }
+    ],
+
+    "afternoon" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Nachmittag",
+            "gender" : "singular"
+        }
+    ],
+
+    "evening" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Abend",
+            "gender" : "singular"
+        }
+    ],
+
+    "night" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Nacht",
+            "gender" : "singular"
+        }
+    ],
+
+    "this morning" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "heute Morgen"
+        }
+    ],
+
+    "this afternoon" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "heute Nachmittag"
+        }
+    ],
+
+    "tomorrow morning" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "morgen früh"
+        }
+    ],
+
+    "tomorrow evening" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "morgen Abend"
+        }
+    ],
+
+    "in the morning, mornings" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "morgens"
+        }
+    ],
+
+    "before noon" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "vormittags"
+        }
+    ],
+
+    "at noon" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "mittags"
+        }
+    ],
+
+    "in the afternoon, afternoons" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "nachmittags"
+        }
+    ],
+
+    "in the evening, evenings" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "abends"
+        }
+    ],
+
+    "at night, nights" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "nachts"
+        }
+    ],
+
+    "Mondays, on Monday(s)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "montags"
+        }
+    ],
+
+    "Tuesdays, on Tuesday(s)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "dienstags"
+        }
+    ],
+
+    "Wednesdays, on Wednesday(s)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "mittwochs"
+        }
+    ],
+
+    "Thursdays, on Thursday(s)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "donnerstags"
+        }
+    ],
+
+    "Fridays, on Friday(s)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "freitags"
+        }
+    ],
+
+    "Saturdays, on Saturday(s)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "samstags"
+        }
+    ],
+
+    "Sundays, on Sunday(s)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "sonntags"
+        }
+    ],
+
+    "ballet" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Ballett",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Ballette" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "disco; dance club" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Disco",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Discos" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "watching television" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Fernsehen",
+            "gender" : "singular"
+        }
+    ],
+
+    "film" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Film",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Filme" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "cinema, (movie) theater" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Kino",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Kinos" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "comedy" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Komödie",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Komödien" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "concert" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Konzert",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Konzerte" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "crime, detective, mystery film or book" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Krimi",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Krimis" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "opera" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Oper",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Opern" ,
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "(stage) theater" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Theater",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Theater",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "play, (stage) drama" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Theaterstück",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Theaterstücke",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "tragedy" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Tragödie",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Tragödien",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "to pick up (from a place)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "abholen"
+        }
+    ],
+
+    "to begin" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "anfangen"
+        }
+    ],
+
+    "to call (up)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "anrufen"
+        }
+    ],
+
+    "to clean up; straighten up" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "aufräumen"
+        }
+    ],
+
+    "to get up; stand up" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "aufstehen"
+        }
+    ],
+
+    "to wake up" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "aufwachen"
+        }
+    ],
+
+    "to go out" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "ausgehen"
+        }
+    ],
+
+    "to (go) shop(ping)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "einkaufen"
+        }
+    ],
+
+    "to invite" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "einladen"
+        }
+    ],
+
+    "to fall asleep" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "einschlafen"
+        }
+    ],
+
+    "to watch television" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "fernsehen"
+        }
+    ],
+
+    "to come along" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "mitkommen"
+        }
+    ],
+
+    "to come by" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "vorbeikommen"
+        }
+    ],
+
+    "to plan (to do)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "vorhaben"
+        }
+    ],
+
+    "to listen" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "zuhören"
+        }
+    ],
+
+    "to return, come back" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "zurückkommen"
+        }
+    ],
+
+    "to be permitted to; may" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "dürfen"
+        }
+    ],
+
+    "to be able to; can" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "können"
+        }
+    ],
+
+    "to care for; to like" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "mögen"
+        }
+    ],
+
+    "to have to; must" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "müssen"
+        }
+    ],
+
+    "to be supposed to; ought, should" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "sollen"
+        }
+    ],
+
+    "to want to, to plan to" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "wollen"
+        }
+    ],
+
+    "half" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "halb"
+        }
+    ],
+
+    "after" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "nach"
+        }
+    ],
+
+    "at (at two)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "um"
+        }
+    ],
+
+    "quarter" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "Viertel"
+        }
+    ],
+
+    "to, of" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "vor"
+        }
+    ],
+
+    "to eat breakfast" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "frühstücken"
+        }
+    ],
+
+    "to go for a walk" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "spazieren gehen"
+        }
+    ],
+
+    "to meet" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "treffen"
+        }
+    ],
+
+    "would like to (do) most" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "am liebsten"
+        }
+    ],
+
+    "(intensifying particle often used with imperatives)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "doch"
+        }
+    ],
+
+    "early" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "früh"
+        }
+    ],
+
+    "cozy, cozily" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "gemütlich"
+        }
+    ],
+
+    "usual(ly)" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "gewöhnlich"
+        }
+    ],
+
+    "would rather" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "möchte lieber"
+        }
+    ],
+
+    "one, people, you, they" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "man"
+        }
+    ],
+
+    "suspenseful, exciting" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "spannend"
+        }
+    ],
+
+    "late" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "word" : "spät"
+        }
+    ],
+
+    "library" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Bibliothek",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Bibliotheken",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "gym" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Fitnesscenter",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Fitnesscenter",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "plan" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Plan",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Pläne",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "cup" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Tasse",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Tassen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "(university) lecture" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Vorlesung",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Vorlesungen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "week" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "die",
+            "word" : "Woche",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Wochen",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "lecture" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "der",
+            "word" : "Vortrag",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Vorträge",
+                "gender" : "plural"
+            }
+        }
+    ],
+
+    "weekend" : [
+        {
+            "book" : "deutsch-naklar-6e",
+            "chapter" : 4,
+            "article" : "das",
+            "word" : "Wochenende",
+            "gender" : "singular",
+            "plural" : {
+                "article" : "die",
+                "word" : "Wochenenden",
+                "gender" : "plural"
+            }
+        }
+    ]
 }
