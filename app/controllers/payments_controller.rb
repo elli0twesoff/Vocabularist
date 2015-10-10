@@ -42,6 +42,7 @@ class PaymentsController < ApplicationController
     )
 
     VocabularistMailer.signup_receipt(current_user).deliver!
+    VocabularistMailer.signup_notification(current_user).deliver!
 
     redirect_to root_path, notice: "Your payment has been recieved and a receipt has been sent to your email. You're now free to use the rest of the site. Thank you!"
 
@@ -98,7 +99,7 @@ class PaymentsController < ApplicationController
   end
 
   def signup_email
-    VocabularistMailer.signup_receipt(current_user).deliver!
+    VocabularistMailer.signup_notification(current_user).deliver!
     redirect_to :back, flash: { notice: 'test email sent.' }
   end
 

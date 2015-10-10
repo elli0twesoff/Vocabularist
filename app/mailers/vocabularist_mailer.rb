@@ -7,4 +7,9 @@ class VocabularistMailer < ActionMailer::Base
     mail(to: recipient, subject: 'thank you so much!')
   end
 
+  def signup_notification(user)
+    @user = user
+    mail(to: 'ewesoff@gmail.com', subject: 'New Vocabularist subscription!')
+  end
+
 end

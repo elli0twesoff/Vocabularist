@@ -1,0 +1,7 @@
+.container{ style: "width: 50%; margin: auto; text-align: center; border: 1px solid red; font-family: Courier" }
+  .center{ style: "padding: 20px; text-align: center;" }
+    %h4
+      = "#{@user.first_name} #{@user.last_name} (#{@user.email}) has paid for vocabularist!"
+
+    %p
+      = "on #{Time.now.strftime('%A %B %-d, %Y - %l:%M:%S%P')} PST"
