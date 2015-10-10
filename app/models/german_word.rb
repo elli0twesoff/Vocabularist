@@ -19,6 +19,8 @@ class GermanWord < ActiveRecord::Base
         en = EnglishWord.find_or_create_by(word: word, chapter: translation['chapter'])
 
         new_deutsch = en.german_words.create(
+              book: translation['book'],
+           chapter: translation['chapter'],
               word: translation['word'],
            article: translation['article'],
             gender: translation['gender']

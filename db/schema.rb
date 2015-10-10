@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009064210) do
+ActiveRecord::Schema.define(version: 20151010041802) do
 
   create_table "english_words", force: true do |t|
     t.string   "word"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20151009064210) do
     t.integer  "english_word_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "book"
+    t.integer  "chapter"
   end
 
   create_table "payments", force: true do |t|
@@ -66,6 +68,7 @@ ActiveRecord::Schema.define(version: 20151009064210) do
     t.boolean  "activated",              default: false
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "book_selected"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
